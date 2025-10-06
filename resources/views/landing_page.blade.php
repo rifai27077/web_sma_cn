@@ -24,7 +24,7 @@
   </div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
+
 
 <!-- Sambutan Section -->
 <section class="py-20 px-6 bg-white">
@@ -63,7 +63,6 @@
 	</div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
 
 <!-- Visi Misi Section -->
 <section class="py-20 px-6 bg-[#699D15]">
@@ -89,10 +88,8 @@
             </div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
-
 <!-- Bidang Studi Kami Section -->
-<section class="py-20 px-6 bg-gradient-to-b from-white to-green-50">
+<section class="pt-20 px-6 bg-gradient-to-b from-white to-green-50">
   <div class="max-w-7xl mx-auto text-center">
     <h2 class="text-3xl md:text-5xl font-extrabold text-[#7CB518] mb-10" data-aos="fade-down">
       Bidang Studi Kami
@@ -112,12 +109,11 @@
     <div class="relative flex justify-center" data-aos="zoom-in" data-aos-delay="400">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 w-72 h-72 bg-[#7CB518]/10 rounded-full blur-3xl"></div>
       <img src="/images/allmodel.png" alt="Bidang Studi Siswa"
-        class="relative z-10 w-full max-w-5xl object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-105" />
+        class="relative z-10 w-full max-w-5xl object-contain drop-shadow-2xl" />
 	</div>
   </div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
 
 <!-- Pilihan Jurusan Section -->
 <section class="py-20 px-6 bg-gradient-to-b from-white via-green-50 to-white">
@@ -173,7 +169,6 @@
   </div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
 
 <!-- Prestasi Section -->
 <section class="py-20 px-6 bg-white">
@@ -185,13 +180,95 @@
 	</div>
 </section>
 
-<div class="h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent my-10"></div>
-
+<!-- Ekstrakurikuler Section -->
 <!-- Ekstrakurikuler Section -->
 <section class="py-20 px-6 bg-white">
-	<div class="bg-green-100 rounded-xl p-6 text-center shadow hover:shadow-lg transition">
-		<img src="/images/pramuka.png" class="mx-auto h-16 mb-3">
-		<h4 class="font-semibold text-green-700">Pramuka</h4>
-  	</div>
+  <div class="max-w-7xl mx-auto text-center mb-14">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-[#7CB518]">
+      Asah kemampuan mu melalui ekskul - ekskul
+    </h2>
+    <p class="text-[#E9DC00] text-xl font-semibold">berkelas Citra Negara</p>
+  </div>
+
+  @php
+    $ekskul = [
+      [
+        'nama' => 'CITTER',
+        'deskripsi' => 'Citra Negara Theater',
+        'img' => '/images/eskul-citter.jpg',
+        'wa' => '#',
+        'ig' => '#',
+        'posisi' => 'left'
+      ],
+      [
+        'nama' => 'Futsal',
+        'deskripsi' => 'Ekstrakurikuler Futsal',
+        'img' => '/images/eskul-futsal.jpg',
+        'wa' => '#',
+        'ig' => '#',
+        'posisi' => 'right'
+      ],
+      [
+        'nama' => 'Paskibra',
+        'deskripsi' => 'Baswara',
+        'img' => '/images/eskul-paskibra.jpg',
+        'wa' => '#',
+        'ig' => '#',
+        'posisi' => 'left'
+      ],
+      [
+        'nama' => 'Cinar',
+        'deskripsi' => 'Seni Tari Citra Negara',
+        'img' => '/images/eskul-cinar.jpg',
+        'wa' => '#',
+        'ig' => '#',
+        'posisi' => 'right'
+      ],
+    ];
+  @endphp
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
+    @foreach ($ekskul as $e)
+      @if ($e['posisi'] === 'left')
+        <!-- Kiri -->
+        <div>
+          <h4 class="font-bold text-lg text-left text-[#111]">{{ $e['nama'] }}</h4>
+          <p class="text-gray-600 text-left mb-4">{{ $e['deskripsi'] }}</p>
+          <div class="flex items-center gap-4">
+            <img src="{{ $e['img'] }}" alt="{{ $e['nama'] }}" class="w-64 h-40 object-cover rounded-xl shadow"/>
+            <div class="flex gap-2">
+				<a href="https://instagram.com/username" target="_blank" class="text-pink-600 text-4xl hover:text-pink-400">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+
+              	 <a href="https://wa.me/628123456789" target="_blank" class="text-green-600 text-5xl hover:text-green-400">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+            </div>
+          </div>
+        </div>
+      @else
+
+        <!-- Kanan -->
+        <div class="flex flex-col items-end text-right">
+          <h4 class="font-bold text-lg text-[#111]">{{ $e['nama'] }}</h4>
+          <p class="text-gray-600 mb-4">{{ $e['deskripsi'] }}</p>
+          <div class="flex items-center justify-end gap-4">
+            <div class="flex gap-2">
+              <a href="{{ $e['ig'] }}" class="bg-[#E1306C] hover:bg-[#C1285C] transition p-2 rounded-full">
+                <img src="/images/ig-icon.png" alt="Instagram" class="h-6 w-6" />
+              </a>
+              <a href="{{ $e['wa'] }}" class="bg-[#7CB518] hover:bg-[#6AA115] transition p-2 rounded-full">
+                <img src="/images/wa-icon.png" alt="WhatsApp" class="h-6 w-6" />
+              </a>
+            </div>
+            <img src="{{ $e['img'] }}" alt="{{ $e['nama'] }}" class="w-64 h-40 object-cover rounded-xl shadow" />
+          </div>
+        </div>
+      @endif
+    @endforeach
+  </div>
+</section>
+
 </section>
 @endsection
