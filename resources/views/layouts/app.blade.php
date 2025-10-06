@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,13 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  integrity="sha512-KCkQUMoXxjqDk5jRx2ayt+N03R6JPC0J5H9kFZ8NQ7g9RbA8+3A7tqFKdDZKfQ3KQ9k3nUB2t1FT8bZQ05i5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jsDelivr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
 
     <style>
-        body, html, * {
-            font-family: 'Poppins', sans-serif !important;
+        html, body {
+            font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
-        }
+            }
+
+            /* optional: jika kamu ingin tetap mengatur box-sizing atau spacing pada semua elemen, pisahkan itu */
+        * { box-sizing: border-box; }
     </style>
 </head>
 <body class="antialiased text-gray-900">

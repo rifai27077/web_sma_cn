@@ -5,87 +5,81 @@
 @section('content')
 
 <!-- Link ke Panel Admin (bisa dikondisikan tampil jika admin login) -->
-
-<!-- hero section -->
-<section class="relative bg-gradient-to-b from-[#7CB518] to-green-100 overflow-hidden">
+<section class="relative bg-gradient-to-b from-[#7CB518] to-green-100 overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
   <div class="absolute inset-0 w-full h-full z-0">
-	<div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
     <video autoplay loop muted playsinline class="w-full h-full object-cover">
       <source src="/videos/smk.MOV" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 flex flex-col items-center justify-center min-h-[400px]" style="min-height:400px;">
-        <div class="w-full md:w-2/3 mx-auto text-center">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Selamat Datang di <span class="bg-white text-[#7CB518] px-2 rounded">SMK Citra Negara</span></h1>
-        <p class="text-white text-lg mb-6">Mencetak generasi yang terampil, berkarakter, dan siap bersaing di dunia kerja serta melanjutkan pendidikan ke jenjang yang lebih tinggi.</p>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 flex flex-col items-center justify-center min-h-[400px]" style="min-height:400px;">
+    <div class="w-full md:w-2/3 mx-auto text-center" data-aos="zoom-in" data-aos-delay="200">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
+        Selamat Datang di <span class="bg-white text-[#7CB518] px-2 rounded">SMK Citra Negara</span>
+      </h1>
+      <p class="text-white text-lg mb-6">
+        Mencetak generasi yang terampil, berkarakter, dan siap bersaing di dunia kerja serta melanjutkan pendidikan ke jenjang yang lebih tinggi.
+      </p>
     </div>
   </div>
 </section>
 
+<section class="py-20 px-6 bg-white" data-aos="fade-up" data-aos-duration="1000">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
+    <div class="flex gap-6 items-center md:items-stretch" data-aos="fade-right" data-aos-delay="200">
+      <div class="mt-4 grid justify-start">
+        <img src="/images/u-smk2.png" alt="Lapangan SMK" class="w-64 h-64 object-cover rounded-2xl shadow" />
+        <div class="bg-[#7CB518] rounded-xl px-10 py-7 flex flex-col items-center shadow mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <span class="text-4xl md:text-5xl font-bold text-white leading-none">20</span>
+          <span class="text-white text-lg font-medium mt-1">Years Of Experience</span>
+        </div>
+      </div>
+      <div class="flex mt-4" data-aos="fade-left" data-aos-delay="250">
+        <img src="/images/kp-smk.jpg" alt="Kepala Sekolah" class="w-full h-80 object-cover rounded-2xl shadow" />
+      </div>
+    </div>
 
-
-<!-- Sambutan Section -->
-<section class="py-20 px-6 bg-white">
-	<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
-		<!-- Kiri: Foto dan box pengalaman -->
-		<div class="flex gap-6 items-center md:items-stretch">
-            <div class="mt-4 grid justify-start">
-                <img src="/images/u-smk2.png" alt="Lapangan SMK" class="w-64 h-64 object-cover rounded-2xl shadow" />
-
-				<div class="bg-[#7CB518] rounded-xl px-10 py-7 flex flex-col items-center shadow mt-4">
-					<span class="text-4xl md:text-5xl font-bold text-white leading-none">20</span>
-					<span class="text-white text-lg font-medium mt-1">Years Of Experience</span>
-				</div>
-			</div>
-
-			<div class="flex mt-4">
-				<img src="/images/kp-smk.jpg" alt="Kepala Sekolah" class="w-full h-80 object-cover rounded-2xl shadow" />
-			</div>
-		</div>
-
-		<!-- Kanan: Sambutan dan judul -->
-		<div class="pt-6 md:pt-0">
-			<div class="mb-2 text-[#222] text-sm font-semibold tracking-wide uppercase flex items-center gap-2">
-				<span>Sambutan Kepala Sekolah</span>
-				<span class="block w-12 h-0.5 bg-[#222] rounded"></span>
-			</div>
-			<h2 class="text-2xl md:text-3xl font-extrabold text-[#111] mb-3">Abdul Kodir Zaelani, S.Pd.I.</h2>
-			<div class="text-[#444] text-sm md:text-base leading-relaxed space-y-3">
-				<p>Assalamu’alaikum warahmatullahi wabarakatuh,</p>
-				<p>Saya Abdul Kodir Zaelani, S.Pd.I. selaku kepala sekolah SMK Citra Negara, salam sejahtera untuk seluruh siswa-siswi, orang tua, guru, dan staf sekolah kita yang tercinta.</p>
-				<p>Selamat datang di SMK Citra Negara, Lembaga pendidikan yang berkomitmen mencetak generasi yang terampil, berkarakter, dan siap bersaing di dunia kerja serta melanjutkan pendidikan ke jenjang yang lebih tinggi.</p>
-				<p>Di era globalisasi dan digitalisasi ini, tantangan di dunia industri semakin kompleks. Oleh karena itu, kami di SMK Citra Negara senantiasa berupaya memberikan pendidikan berbasis kompetensi, mengedepankan nilai-nilai kejujuran, disiplin, dan inovasi. Dengan kurikulum yang relevan, tenaga pendidik yang profesional, serta fasilitas lengkap yang mendukung proses pembelajaran, kami berharap dapat memberikan pengalaman belajar terbaik bagi para siswa. Kami berharap semua pihak dapat bersinergi dalam mewujudkan visi dan misi sekolah ini. Semoga Allah SWT senantiasa meridhai setiap langkah kita dalam mencerdaskan kehidupan bangsa.</p>
-				<p>Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
-			</div>
-		</div>
-	</div>
+    <div class="pt-6 md:pt-0" data-aos="fade-up" data-aos-delay="300">
+      <div class="mb-2 text-[#222] text-sm font-semibold tracking-wide uppercase flex items-center gap-2">
+        <span>Sambutan Kepala Sekolah</span>
+        <span class="block w-12 h-0.5 bg-[#222] rounded"></span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-[#111] mb-3">Abdul Kodir Zaelani, S.Pd.I.</h2>
+      <div class="text-[#444] text-sm md:text-base leading-relaxed space-y-3">
+        <p>Assalamu’alaikum warahmatullahi wabarakatuh,</p>
+        <p>Saya Abdul Kodir Zaelani, S.Pd.I. selaku kepala sekolah SMK Citra Negara...</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
 <!-- Visi Misi Section -->
-<section class="py-20 px-6 bg-[#699D15]">
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition flex flex-col h-full">
-                    <div class="flex items-center mb-6">
-                        <span class="flex items-center justify-center bg-[#699D15] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
-                            <img src="/images/sparkles.png" class="h-8 w-8">
-                        </span>
-                        <span class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide text-left">VISI</span>
-                    </div>
-                    <p class="text-gray-700 text-left text-base md:text-lg">Terwujudnya Sekolah yang Religius, Disiplin dan Terampil Dalam Menyongsong Generasi Emas di tahun 2045</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition flex flex-col h-full">
-                    <div class="flex items-center mb-6">
-                        <span class="flex items-center justify-center bg-[#E9DC00] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
-                            <img src="/images/vector.png" class="h-8 w-8">
-                        </span>
-                        <span class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide text-left">MISI</span>
-                    </div>
-                    <p class="text-gray-700 text-left text-base md:text-lg">Mewujudkan Insan yang taat beribadah, cinta kepada kitab suci dan pandai dalam dakwah keagamaan. Mewujudkan peserta didik yang berperilaku baik, patuh, dan memiliki jiwa kepemimpinan. Mewujudkan peserta didik yang ahli sesuai dengan kejuruan, sinkronasi kurikulum intrakurikuler dengan ekstrakurikuler, dan pengembangan kerjasama dengan dunia industri.</p>
-                </div>
-            </div>
+<section class="py-20 px-6 bg-[#699D15]" data-aos="fade-up" data-aos-duration="1000">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition flex flex-col h-full" data-aos="fade-right">
+      <div class="flex items-center mb-6">
+        <span class="flex items-center justify-center bg-[#699D15] rounded-full h-14 w-14 mr-4">
+          <img src="/images/sparkles.png" class="h-8 w-8">
+        </span>
+        <span class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide text-left">VISI</span>
+      </div>
+      <p class="text-gray-700 text-left text-base md:text-lg">
+        Terwujudnya Sekolah yang Religius, Disiplin dan Terampil Dalam Menyongsong Generasi Emas di tahun 2045
+      </p>
+    </div>
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition flex flex-col h-full" data-aos="fade-left" data-aos-delay="150">
+      <div class="flex items-center mb-6">
+        <span class="flex items-center justify-center bg-[#E9DC00] rounded-full h-14 w-14 mr-4">
+          <img src="/images/vector.png" class="h-8 w-8">
+        </span>
+        <span class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide text-left">MISI</span>
+      </div>
+      <p class="text-gray-700 text-left text-base md:text-lg">
+        Mewujudkan insan yang taat beribadah...
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Bidang Studi Kami Section -->
@@ -169,7 +163,6 @@
   </div>
 </section>
 
-
 <!-- Prestasi Section -->
 <section class="py-20 px-6 bg-white">
 	<h3 class="text-xl md:text-2xl font-bold text-center mb-8">Jejak prestasi yang <span class="bg-[#7CB518] text-white px-2 rounded">membanggakan</span></h3>
@@ -180,95 +173,172 @@
 	</div>
 </section>
 
-<!-- Ekstrakurikuler Section -->
-<!-- Ekstrakurikuler Section -->
 <section class="py-20 px-6 bg-white">
   <div class="max-w-7xl mx-auto text-center mb-14">
     <h2 class="text-2xl md:text-3xl font-extrabold text-[#7CB518]">
-      Asah kemampuan mu melalui ekskul - ekskul
+      Asah kemampuanmu melalui ekskul-eskul
     </h2>
     <p class="text-[#E9DC00] text-xl font-semibold">berkelas Citra Negara</p>
   </div>
 
   @php
     $ekskul = [
-      [
-        'nama' => 'CITTER',
-        'deskripsi' => 'Citra Negara Theater',
-        'img' => '/images/eskul-citter.jpg',
-        'wa' => '#',
-        'ig' => '#',
-        'posisi' => 'left'
-      ],
-      [
-        'nama' => 'Futsal',
-        'deskripsi' => 'Ekstrakurikuler Futsal',
-        'img' => '/images/eskul-futsal.jpg',
-        'wa' => '#',
-        'ig' => '#',
-        'posisi' => 'right'
-      ],
-      [
-        'nama' => 'Paskibra',
-        'deskripsi' => 'Baswara',
-        'img' => '/images/eskul-paskibra.jpg',
-        'wa' => '#',
-        'ig' => '#',
-        'posisi' => 'left'
-      ],
-      [
-        'nama' => 'Cinar',
-        'deskripsi' => 'Seni Tari Citra Negara',
-        'img' => '/images/eskul-cinar.jpg',
-        'wa' => '#',
-        'ig' => '#',
-        'posisi' => 'right'
-      ],
+      ['nama'=>'CITTER','deskripsi'=>'Citra Negara Theater','img'=>'/images/eskul-citter.jpg','wa'=>'#','ig'=>'#','posisi'=>'left'],
+      ['nama'=>'Futsal','deskripsi'=>'Ekstrakurikuler Futsal','img'=>'/images/eskul-futsal.jpg','wa'=>'#','ig'=>'#','posisi'=>'right'],
+      ['nama'=>'Paskibra','deskripsi'=>'Baswara','img'=>'/images/eskul-paskibra.jpg','wa'=>'#','ig'=>'#','posisi'=>'left'],
+      ['nama'=>'Cinar','deskripsi'=>'Seni Tari Citra Negara','img'=>'/images/eskul-cinar.jpg','wa'=>'#','ig'=>'#','posisi'=>'right'],
     ];
   @endphp
 
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
+  <div class="max-w-6xl mx-auto grid gap-14">
     @foreach ($ekskul as $e)
-      @if ($e['posisi'] === 'left')
-        <!-- Kiri -->
-        <div>
-          <h4 class="font-bold text-lg text-left text-[#111]">{{ $e['nama'] }}</h4>
-          <p class="text-gray-600 text-left mb-4">{{ $e['deskripsi'] }}</p>
-          <div class="flex items-center gap-4">
-            <img src="{{ $e['img'] }}" alt="{{ $e['nama'] }}" class="w-64 h-40 object-cover rounded-xl shadow"/>
-            <div class="flex gap-2">
-				<a href="https://instagram.com/username" target="_blank" class="text-pink-600 text-4xl hover:text-pink-400">
-					<i class="fa-brands fa-instagram"></i>
-				</a>
+      {{-- tiap card --}}
+      <article
+        class="group relative bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center gap-6 p-6 transition-transform duration-400 hover:-translate-y-2"
+        data-aos="fade-up"
+        data-aos-delay="{{ 80 * ($loop->index + 1) }}"
+      >
+        {{-- image + overlay button --}}
+        <div class="{{ $e['posisi'] === 'left' ? 'order-1' : 'order-2' }} relative">
+          <div class="relative overflow-hidden rounded-xl shadow-md">
+            <img
+              src="{{ $e['img'] }}"
+              alt="{{ $e['nama'] }} - ekskul"
+              loading="lazy"
+              class="w-full h-56 md:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
 
-              	 <a href="https://wa.me/628123456789" target="_blank" class="text-green-600 text-5xl hover:text-green-400">
-					<i class="fa-brands fa-whatsapp"></i>
-				</a>
+            {{-- gradient glow --}}
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            {{-- overlay action --}}
+            <div class="absolute inset-0 flex items-end justify-center p-4">
+              <button
+                onclick="openModal({{ $loop->index }})"
+                class="bg-white/90 text-[#111] py-2 px-4 rounded-full font-semibold shadow hover:scale-105 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7CB518]"
+                aria-label="Lihat detail {{ $e['nama'] }}"
+              >
+                Lihat Ekskul
+              </button>
             </div>
           </div>
         </div>
-      @else
 
-        <!-- Kanan -->
-        <div class="flex flex-col items-end text-right">
-          <h4 class="font-bold text-lg text-[#111]">{{ $e['nama'] }}</h4>
+        {{-- content --}}
+        <div class="{{ $e['posisi'] === 'left' ? 'order-2' : 'order-1' }} pr-2">
+          <h3 class="text-lg font-extrabold text-[#111] mb-2">{{ $e['nama'] }}</h3>
           <p class="text-gray-600 mb-4">{{ $e['deskripsi'] }}</p>
-          <div class="flex items-center justify-end gap-4">
-            <div class="flex gap-2">
-              <a href="{{ $e['ig'] }}" class="bg-[#E1306C] hover:bg-[#C1285C] transition p-2 rounded-full">
-                <img src="/images/ig-icon.png" alt="Instagram" class="h-6 w-6" />
-              </a>
-              <a href="{{ $e['wa'] }}" class="bg-[#7CB518] hover:bg-[#6AA115] transition p-2 rounded-full">
-                <img src="/images/wa-icon.png" alt="WhatsApp" class="h-6 w-6" />
-              </a>
-            </div>
-            <img src="{{ $e['img'] }}" alt="{{ $e['nama'] }}" class="w-64 h-40 object-cover rounded-xl shadow" />
+
+          <div class="flex items-center gap-3">
+            {{-- Instagram (SVG inline, currentColor) --}}
+            <a href="{{ $e['ig'] }}" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-pink-100 to-pink-50 border border-pink-200 text-pink-600 hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-pink-300"
+               aria-label="Instagram {{ $e['nama'] }}">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM4.5 7.75A3.25 3.25 0 0 1 7.75 4.5h8.5A3.25 3.25 0 0 1 19.5 7.75v8.5a3.25 3.25 0 0 1-3.25 3.25h-8.5A3.25 3.25 0 0 1 4.5 16.25v-8.5zm7.25 1a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm0 2a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5zm5-2.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+              </svg>
+            </a>
+
+            {{-- WhatsApp --}}
+            <a href="{{ $e['wa'] }}" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-green-100 to-green-50 border border-green-200 text-green-600 hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-green-300"
+               aria-label="WhatsApp {{ $e['nama'] }}">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a9.93 9.93 0 0 0-7.07 2.93A9.93 9.93 0 0 0 2 12a9.93 9.93 0 0 0 2.93 7.07A9.93 9.93 0 0 0 12 22a9.93 9.93 0 0 0 7.07-2.93A9.93 9.93 0 0 0 22 12a9.93 9.93 0 0 0-2.93-7.07A9.93 9.93 0 0 0 12 2zm0 18a8 8 0 0 1-4.21-1.19l-.3-.18-2.86.75.77-2.8-.2-.31A7.97 7.97 0 1 1 12 20zm3.84-5.06c-.21-.11-1.23-.61-1.42-.68s-.33-.1-.47.1-.54.68-.67.82-.25.15-.46.05a6.53 6.53 0 0 1-1.93-1.19 7.12 7.12 0 0 1-1.31-1.63c-.14-.25 0-.39.1-.53.1-.12.25-.32.37-.48s.16-.25.25-.41.05-.31-.03-.44c-.08-.11-.47-1.13-.65-1.55s-.35-.36-.48-.37h-.41a.79.79 0 0 0-.57.27 2.37 2.37 0 0 0-.74 1.77 4.18 4.18 0 0 0 .87 2.26 9.45 9.45 0 0 0 3.65 3.16c.51.22.9.34 1.2.43a2.87 2.87 0 0 0 1.32.08 2.22 2.22 0 0 0 1.45-1.02 1.8 1.8 0 0 0 .12-1.02c-.05-.08-.18-.13-.39-.23z"/>
+              </svg>
+            </a>
+
+            {{-- Tombol detail (akses keyboard) --}}
+            <button
+              onclick="openModal({{ $loop->index }})"
+              class="ml-3 px-4 py-2 bg-[#7CB518] text-white rounded-full font-semibold hover:bg-[#6aa015] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7CB518] transition"
+            >
+              Detail
+            </button>
           </div>
         </div>
-      @endif
+
+        {{-- modal markup (hidden by default) --}}
+        <div id="modal-{{ $loop->index }}" class="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none opacity-0 transition-opacity duration-300">
+          <div
+            class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
+            onclick="closeModal({{ $loop->index }})"
+            aria-hidden="true"
+          ></div>
+
+          <div class="relative max-w-3xl w-full bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 scale-95">
+            <div class="flex items-start md:items-center gap-4 p-6">
+              <img src="{{ $e['img'] }}" alt="{{ $e['nama'] }}" class="w-32 h-24 object-cover rounded-lg shadow-sm" />
+              <div>
+                <h4 class="text-xl font-bold text-[#111]">{{ $e['nama'] }}</h4>
+                <p class="text-gray-600 mt-2">{{ $e['deskripsi'] }}</p>
+
+                <div class="mt-4 flex gap-3 items-center">
+                  <a href="{{ $e['ig'] }}" target="_blank" class="text-pink-600 hover:text-pink-400" aria-label="Instagram {{ $e['nama'] }}">
+                    <!-- small svg -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM4.5 7.75A3.25 3.25 0 0 1 7.75 4.5h8.5A3.25 3.25 0 0 1 19.5 7.75v8.5a3.25 3.25 0 0 1-3.25 3.25h-8.5A3.25 3.25 0 0 1 4.5 16.25v-8.5zm7.25 1a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm0 2a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5zm5-2.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/></svg>
+                  </a>
+                  <a href="{{ $e['wa'] }}" target="_blank" class="text-green-600 hover:text-green-400" aria-label="WhatsApp {{ $e['nama'] }}">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a9.93 9.93 0 0 0-7.07 2.93A9.93 9.93 0 0 0 2 12a9.93 9.93 0 0 0 2.93 7.07A9.93 9.93 0 0 0 12 22a9.93 9.93 0 0 0 7.07-2.93A9.93 9.93 0 0 0 22 12a9.93 9.93 0 0 0-2.93-7.07A9.93 9.93 0 0 0 12 2zm0 18a8 8 0 0 1-4.21-1.19l-.3-.18-2.86.75.77-2.8-.2-.31A7.97 7.97 0 1 1 12 20zm3.84-5.06c-.21-.11-1.23-.61-1.42-.68s-.33-.1-.47.1-.54.68-.67.82-.25.15-.46.05a6.53 6.53 0 0 1-1.93-1.19 7.12 7.12 0 0 1-1.31-1.63c-.14-.25 0-.39.1-.53.1-.12.25-.32.37-.48s.16-.25.25-.41.05-.31-.03-.44c-.08-.11-.47-1.13-.65-1.55s-.35-.36-.48-.37h-.41a.79.79 0 0 0-.57.27 2.37 2.37 0 0 0-.74 1.77 4.18 4.18 0 0 0 .87 2.26 9.45 9.45 0 0 0 3.65 3.16c.51.22.9.34 1.2.43a2.87 2.87 0 0 0 1.32.08 2.22 2.22 0 0 0 1.45-1.02 1.8 1.8 0 0 0 .12-1.02c-.05-.08-.18-.13-.39-.23z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              {{-- close button --}}
+              <button
+                onclick="closeModal({{ $loop->index }})"
+                class="ml-auto text-gray-500 hover:text-gray-700 focus:outline-none"
+                aria-label="Tutup detail {{ $e['nama'] }}"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
     @endforeach
   </div>
+
+  {{-- skrip modal + keyboard handling --}}
+  <script>
+    let openIndex = null;
+
+    function openModal(idx) {
+      const el = document.getElementById(`modal-${idx}`);
+      if (!el) return;
+      el.classList.remove('pointer-events-none', 'opacity-0');
+      el.classList.add('pointer-events-auto', 'opacity-100');
+      // add subtle scale-in
+      const panel = el.querySelector('div.relative.max-w-3xl') || el.querySelector('div.relative');
+      if (panel) panel.style.transform = 'translateY(0)';
+      document.body.classList.add('overflow-hidden');
+      openIndex = idx;
+      // focus first focusable
+      const focusable = el.querySelector('button, a[href], input, select, textarea');
+      if (focusable) focusable.focus();
+    }
+
+    function closeModal(idx) {
+      const el = document.getElementById(`modal-${idx}`);
+      if (!el) return;
+      el.classList.add('pointer-events-none', 'opacity-0');
+      el.classList.remove('pointer-events-auto', 'opacity-100');
+      document.body.classList.remove('overflow-hidden');
+      openIndex = null;
+    }
+
+    // close modal with ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && openIndex !== null) {
+        closeModal(openIndex);
+      }
+    });
+
+    // prevent scroll on mobile when modal open handled by overflow-hidden on body
+  </script>
 </section>
 
-</section>
+
 @endsection
