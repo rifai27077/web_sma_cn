@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMK Citra Negara</title>
-    <!-- Tailwind - include CDN for quick dev; in production use compiled assets -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-    <!-- jsDelivr -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
 
     <style>
@@ -18,7 +16,6 @@
             scroll-behavior: smooth;
             }
 
-            /* optional: jika kamu ingin tetap mengatur box-sizing atau spacing pada semua elemen, pisahkan itu */
         * { box-sizing: border-box; }
     </style>
 </head>
