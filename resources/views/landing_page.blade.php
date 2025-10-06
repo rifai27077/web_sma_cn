@@ -4,7 +4,6 @@
 
 @section('content')
 
-<!-- Link ke Panel Admin (bisa dikondisikan tampil jika admin login) -->
 <section class="relative bg-gradient-to-b from-[#7CB518] to-green-100 overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
   <div class="absolute inset-0 w-full h-full z-0">
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
@@ -133,6 +132,17 @@
         ];
       @endphp
 
+	  @php
+		$jurusan = [
+			['nama'=>'MPLB','warna'=>'from-[#E8B931] to-yellow-100','img'=>'/images/m-mplb.png','desk'=>'Mengembangkan kemampuan administrasi, komunikasi bisnis, dan layanan perkantoran digital.','text'=>'text-yellow-700','border'=>'border-[#FFD600]', 'link'=>'mplb'],
+			['nama'=>'DKV','warna'=>'from-[#900B09] to-pink-300','img'=>'/images/m-dkv.png','desk'=>'Belajar desain visual, ilustrasi, fotografi, hingga branding digital kreatif.','text'=>'text-white','border'=>'border-[#FF6B6B]', 'link'=>'dkv'],
+			['nama'=>'PPLG','warna'=>'from-[#14104E] to-blue-300','img'=>'/images/m-pplg.png','desk'=>'Menciptakan perangkat lunak, website, dan game dengan teknologi modern.','text'=>'text-white','border'=>'border-[#7B6CF6]', 'link'=>'pplg'],
+			['nama'=>'TJKT','warna'=>'from-blue-400 to-blue-100','img'=>'/images/m-tkj.png','desk'=>'Menguasai jaringan komputer, sistem server, dan infrastruktur IT profesional.','text'=>'text-blue-900','border'=>'border-[#6EC6FF]', 'link'=>'tjkt'],
+			['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','img'=>'/images/m-pm.png','desk'=>'Belajar strategi pemasaran digital, wirausaha, dan layanan pelanggan.','text'=>'text-[#E26A00]','border'=>'border-[#E26A00]', 'link'=>'pm'],
+			['nama'=>'PH','warna'=>'from-green-200 to-gray-100','img'=>'/images/m-ph.png','desk'=>'Mengasah keahlian di bidang perhotelan, pelayanan tamu, dan tata boga.','text'=>'text-green-800','border'=>'border-green-700', 'link'=>'ph']
+		];
+		@endphp
+
       @foreach ($jurusan as $index => $j)
       <div 
         class="relative group rounded-2xl bg-gradient-to-br {{ $j['warna'] }} p-8 flex flex-col items-center shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.03]"
@@ -154,9 +164,10 @@
         <h4 class="relative z-10 font-extrabold text-xl {{ $j['text'] }} mb-2">{{ $j['nama'] }}</h4>
         <p class="relative z-10 text-sm md:text-base text-center text-black/80 mb-4">{{ $j['desk'] }}</p>
         
-        <a href="#" class="relative z-10 inline-flex items-center px-5 py-2 bg-white {{ $j['border'] }} border text-sm font-semibold rounded-full transition-all duration-300 hover:text-white hover:bg-[#7CB518]">
-          Ketahui lebih lanjut <span class="ml-2">→</span>
-        </a>
+       <a href="{{ url('/jurusan/' . strtolower($j['link'])) }}" 
+		class="relative z-10 inline-flex items-center px-5 py-2 bg-white {{ $j['border'] }} border text-sm font-semibold rounded-full transition-all duration-300 hover:text-white hover:bg-[#7CB518]">
+		Ketahui lebih lanjut <span class="ml-2">→</span>
+		</a>
       </div>
       @endforeach
     </div>
@@ -183,10 +194,10 @@
 
   @php
     $ekskul = [
-      ['nama'=>'CITTER','deskripsi'=>'Citra Negara Theater','img'=>'/images/eskul-citter.jpg','wa'=>'#','ig'=>'#','posisi'=>'left'],
-      ['nama'=>'Futsal','deskripsi'=>'Ekstrakurikuler Futsal','img'=>'/images/eskul-futsal.jpg','wa'=>'#','ig'=>'#','posisi'=>'right'],
-      ['nama'=>'Paskibra','deskripsi'=>'Baswara','img'=>'/images/eskul-paskibra.jpg','wa'=>'#','ig'=>'#','posisi'=>'left'],
-      ['nama'=>'Cinar','deskripsi'=>'Seni Tari Citra Negara','img'=>'/images/eskul-cinar.jpg','wa'=>'#','ig'=>'#','posisi'=>'right'],
+      ['nama'=>'CITTER','deskripsi'=>'Citra Negara Theater','img'=>'/images/citter.png','wa'=>'#','ig'=>'#','posisi'=>'left'],
+      ['nama'=>'Futsal','deskripsi'=>'Ekstrakurikuler Futsal','img'=>'/images/futsal.png','wa'=>'#','ig'=>'#','posisi'=>'right'],
+      ['nama'=>'Paskibra','deskripsi'=>'Baswara','img'=>'/images/paskibra.png','wa'=>'#','ig'=>'#','posisi'=>'left'],
+      ['nama'=>'Cinar','deskripsi'=>'Seni Tari Citra Negara','img'=>'/images/cinar.png','wa'=>'#','ig'=>'#','posisi'=>'right'],
     ];
   @endphp
 
@@ -210,17 +221,6 @@
 
             {{-- gradient glow --}}
             <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            {{-- overlay action --}}
-            <div class="absolute inset-0 flex items-end justify-center p-4">
-              <button
-                onclick="openModal({{ $loop->index }})"
-                class="bg-white/90 text-[#111] py-2 px-4 rounded-full font-semibold shadow hover:scale-105 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7CB518]"
-                aria-label="Lihat detail {{ $e['nama'] }}"
-              >
-                Lihat Ekskul
-              </button>
-            </div>
           </div>
         </div>
 
