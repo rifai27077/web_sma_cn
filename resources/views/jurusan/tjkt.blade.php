@@ -5,36 +5,16 @@
 @section('content')
 <body class="bg-[#f8f8f8] text-gray-800">
 
-  <!-- Section Header -->
-  <section class="text-center bg-white shadow-sm">
-    <div class="flex flex-col md:flex-row items-center justify-start p-8 md:p-10 gap-6">
-      <img src="/images/jurusan/logo-tjkt.png" alt="Logo TJKT" class="w-22 h-22 md:w-28 md:h-28 object-contain">
-      <h1 class="text-lg md:text-2xl font-extrabold text-[#89B9E0]">
+  <!-- Career Bubble Section -->
+  <section class="relative bg-[#89B9E0]/20 flex flex-col items-center overflow-hidden">
+     <div class="text-center">
+    <div class="flex flex-col md:flex-row items-center justify-start md:p-2 gap-3">
+      <img src="/images/jurusan/logo-tjkt.png" alt="Logo TJKT" class="w-20 md:w-20 md:h-20 object-contain">
+      <h1 class="text-lg md:text-xl font-extrabold text-[#89B9E0]">
         Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
       </h1>
     </div>
-  </section>
-
-  <!-- Career Bubble Section -->
-  <section class="relative bg-[#89B9E0]/20 flex flex-col items-center overflow-hidden">
-    <h2 class="text-lg md:text-xl font-semibold mt-6">Prospek karir:</h2>
-    <div class="relative flex flex-wrap justify-center gap-6 mt-6">
-      @php
-        $career = [
-          'Teknisi IT',
-          'Administrator Jaringan',
-          'Teknisi Telekomunikasi',
-          'Teknisi Jaringan',
-          'Spesialis Keamanan Jaringan',
-        ];
-      @endphp
-
-      @foreach ($career as $job)
-        <span class="px-6 py-3 bg-[#89B9E0] text-white text-sm md:text-base font-medium rounded-full shadow">
-          {{ $job }}
-        </span>
-      @endforeach
-    </div>
+</div>
 
     <div class="mt-4 items-center">
       <img src="/images/jurusan/ml-tjkt.png" alt="model pasangan tjkt" class="w-full max-w-sm">
@@ -78,6 +58,25 @@
       </p>
     </div>
   </section>
+
+   <h2 class="text-lg md:text-xl font-semibold mt-6 text-center">Prospek karir:</h2>
+    <div class="relative flex flex-wrap justify-center gap-6 mt-6">
+      @php
+        $career = [
+          'Teknisi IT',
+          'Administrator Jaringan',
+          'Teknisi Telekomunikasi',
+          'Teknisi Jaringan',
+          'Spesialis Keamanan Jaringan',
+        ];
+      @endphp
+
+      @foreach ($career as $job)
+        <span class="px-6 py-3 bg-[#89B9E0] text-white text-sm md:text-base font-medium rounded-full shadow">
+          {{ $job }}
+        </span>
+      @endforeach
+    </div>
 
   <!-- Jurusan Lainnya Section -->
   <section class="bg-white py-16 mt-10">

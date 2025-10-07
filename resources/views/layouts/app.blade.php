@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <style>
         html, body {
@@ -17,12 +17,19 @@
             }
 
         * { box-sizing: border-box; }
+
+       
+        [x-cloak] { display: none !important; }
     </style>
-</head>
-<body class="antialiased text-gray-900">
-    <div id="app">
-        @yield('content')
-    </div>
+
+
+    </head>
+    <body class="antialiased text-gray-900">
+         @include('components.header')
+        <main id="app" class="pt-16">
+            @yield('content')
+            @include('components.footer')
+        </main>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
