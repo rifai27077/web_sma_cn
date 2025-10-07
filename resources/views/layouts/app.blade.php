@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="SMK Citra Negara - Sekolah unggulan yang membentuk generasi terampil, disiplin, dan siap kerja.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>SMK Citra Negara</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,33 +24,55 @@
         [x-cloak] { display: none !important; }
     </style>
 
+</head>
+<body class="antialiased text-gray-900">
+        <x-header class="site-header sticky top-0 z-50 bg-white shadow-sm h-16 md:h-20" />
 
-    </head>
-    <body class="antialiased text-gray-900">
-         @include('components.header')
-        <main id="app" class="pt-16">
-            @yield('content')
-            @include('components.footer')
-        </main>
+    <main class="flex-1 pt-16 md:pt-20">
+        @yield('content')
+    </main>
+
+    <x-footer class="mt-auto" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
+    if (isDesktop) {
+        // Buat elemen script untuk load AOS hanya di desktop
+        const aosScript = document.createElement("script");
+        aosScript.src = "https://unpkg.com/aos@2.3.4/dist/aos.js";
+        aosScript.onload = function() {
         AOS.init({
-            duration: 800,
             once: true,
+            duration: 700,
+            delay: 100,
+            offset: 80,
+            easing: "ease-out-cubic",
         });
+        };
+        document.body.appendChild(aosScript);
 
-        document.querySelectorAll('.group').forEach(card => {
-            card.addEventListener('mousemove', e => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                card.style.transform = `rotateY(${x / 30}deg) rotateX(${-y / 30}deg) scale(1.03)`;
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = '';
-            });
+        // Tambahkan stylesheet AOS juga
+        const aosStyle = document.createElement("link");
+        aosStyle.rel = "stylesheet";
+        aosStyle.href = "https://unpkg.com/aos@2.3.4/dist/aos.css";
+        document.head.appendChild(aosStyle);
+    } else {
+        // Nonaktifkan efek AOS di mobile
+        document.querySelectorAll("[data-aos]").forEach(el => {
+        el.removeAttribute("data-aos");
+        el.removeAttribute("data-aos-delay");
+        el.removeAttribute("data-aos-duration");
+        el.removeAttribute("data-aos-offset");
         });
-
+    }
+    });
     </script>
+
+    <noscript>
+        <style>[data-aos]{opacity:1 !important;transform:none !important;}</style>
+    </noscript>
+
 </body>
 </html>

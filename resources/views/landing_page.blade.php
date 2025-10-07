@@ -4,16 +4,17 @@
 
 @section('content')
 
-<section class="relative bg-gradient-to-b from-[#7CB518] to-green-100 overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
-  <div class="absolute inset-0 w-full h-full z-0">
+<section 
+  class="relative h-[80vh] w-full flex items-center justify-center bg-[url('/images/hero-fallback.jpg')] bg-cover bg-center"
+>  <div class="absolute inset-0 w-full h-full z-0">
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
-    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+    <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
       <source src="/videos/smk.MOV" type="video/mp4" />
     </video>
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   </div>
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 flex flex-col items-center justify-center min-h-[400px]" style="min-height:400px;">
-    <div class="w-full md:w-2/3 mx-auto text-center" data-aos="zoom-in" data-aos-delay="200">
+    <div class="w-full md:w-2/3 mx-auto text-center" data-aos="zoom-in" data-aos-delay="50">
       <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
         Selamat Datang di <span class="bg-white text-[#7CB518] px-2 rounded">SMK Citra Negara</span>
       </h1>
@@ -29,7 +30,7 @@
     <div class="flex gap-6 items-center md:items-stretch" data-aos="fade-right" data-aos-delay="200">
       <div class="mt-4 grid justify-start">
         <img src="/images/u-smk2.png" alt="Lapangan SMK" class="w-64 h-64 object-cover rounded-2xl shadow" />
-        <div class="bg-[#7CB518] rounded-xl px-10 py-7 flex flex-col items-center shadow mt-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="bg-[#7CB518] rounded-xl px-10 py-7 flex flex-col items-center shadow mt-4" data-aos="zoom-in" data-aos-delay="200">
           <span class="text-4xl md:text-5xl font-bold text-white leading-none">20</span>
           <span class="text-white text-lg font-medium mt-1">Years Of Experience</span>
         </div>
@@ -39,7 +40,7 @@
       </div>
     </div>
 
-    <div class="pt-6 md:pt-0" data-aos="fade-up" data-aos-delay="300">
+    <div class="pt-6 md:pt-0" data-aos="fade-up" data-aos-delay="200">
       <div class="mb-2 text-[#222] text-sm font-semibold tracking-wide uppercase flex items-center gap-2">
         <span>Sambutan Kepala Sekolah</span>
         <span class="block w-12 h-0.5 bg-[#222] rounded"></span>

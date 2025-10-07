@@ -1,4 +1,4 @@
-<footer class="bg-green-700 text-white py-12">
+<footer class="bg-[#699D15] text-white py-12">
     <div class="max-w-7xl mx-auto px-6">
         <div
             x-data="{
