@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('landing_page');
+    return view('landing');
 });
 
 Route::get('/jurusan/{nama}', function ($nama) {
