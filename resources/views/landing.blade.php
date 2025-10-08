@@ -5,7 +5,7 @@
 @section('content')
 
 <section 
-  class="relative h-[80vh] w-full flex items-center justify-center bg-[url('/images/hero-fallback.jpg')] bg-cover bg-center"
+  class="relative h-[95vh] w-full flex items-center justify-center bg-[url('/images/hero-fallback.jpg')] bg-cover bg-center"
 >  <div class="absolute inset-0 w-full h-full z-0">
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
     <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
@@ -48,13 +48,42 @@
       <h2 class="text-2xl md:text-3xl font-extrabold text-[#111] mb-3">Abdul Kodir Zaelani, S.Pd.I.</h2>
       <div class="text-[#444] text-sm md:text-base leading-relaxed space-y-3">
         <p>Assalamu’alaikum warahmatullahi wabarakatuh,</p>
-        <p>Saya Abdul Kodir Zaelani, S.Pd.I. selaku kepala sekolah SMK Citra Negara...</p>
+
+        <p>
+          Alhamdulillāhi rabbil ‘ālamīn, segala puji bagi Allah SWT yang senantiasa memberikan kita nikmat kesehatan, semangat, dan kesempatan untuk terus berprestasi.
+          Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Muhammad ﷺ, teladan dalam ilmu, kerja keras, dan akhlak mulia.
+        </p>
+
+        <p>
+          Bapak dan Ibu guru yang saya hormati, serta anak-anakku yang hebat,
+          izinkan saya menyampaikan rasa bangga dan apresiasi yang setinggi-tingginya.
+          Ini adalah bukti nyata bahwa siswa SMK Citra Negara tidak hanya mampu belajar,
+          tetapi juga dapat berinovasi dan berkompetisi di dunia digital.
+        </p>
+
+        <p>
+          Anak-anakku, generasi SMK Citra Negara adalah generasi kreatif, cerdas, dan siap bersaing di era teknologi.
+          Teruslah berkarya, teruslah belajar, dan jadilah pelopor teknologi yang membawa manfaat bagi umat dan bangsa.
+        </p>
+
+        <p class="italic text-[#333] font-medium">
+          “Teknologi hanyalah alat, tetapi akhlak dan semangat adalah pondasi.”
+        </p>
+
+        <p>
+          Kalian adalah masa depan — bukan hanya bagi SMK Citra Negara, tetapi juga bagi Indonesia.
+          Buktikan bahwa SMK Citra Negara adalah tempatnya para juara!
+        </p>
+
+        <p>Terima kasih.</p>
+
+        <p>Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="vision-mission" class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden scroll-mt-24" data-aos="fade-up" data-aos-duration="1000">
+<section id="visi-misi" class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden scroll-mt-24" data-aos="fade-up" data-aos-duration="1000">
   <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
   <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -134,7 +163,7 @@
 
 
 <!-- Pilihan Jurusan Section -->
-<section class="py-20 px-6 bg-gradient-to-b from-white via-green-50 to-white">
+<section class="py-20 px-6 bg-gradient-to-b from-white via-green-50 to-white" id="jurusan">
   <div class="max-w-6xl mx-auto text-center">
     <h3 class="text-3xl md:text-5xl font-extrabold text-[#7CB518] mb-4" data-aos="fade-down">
       Pilihan Jurusan Unggulan <br />
@@ -200,7 +229,7 @@
 </section>
 
 <!-- Prestasi Section -->
-<section class="py-20 px-6 bg-white">
+<section class="py-20 px-6 bg-[#7CB518] >
 	<h3 class="text-xl md:text-2xl font-bold text-center mb-8">Jejak prestasi yang <span class="bg-[#7CB518] text-white px-2 rounded">membanggakan</span></h3>
 	<div class="flex flex-wrap justify-center gap-6">
 		<img src="/images/prestasi-1.jpg" alt="Juara 1" class="w-72 rounded-xl shadow border border-gray-100" />
@@ -209,7 +238,7 @@
 	</div>
 </section>
 
-<section class="py-20 px-6 bg-white">
+<section class="py-20 px-6 bg-white" id="ekstrakurikuler">
   <div class="max-w-7xl mx-auto text-center mb-14">
     <h2 class="text-2xl md:text-3xl font-extrabold text-[#7CB518]">
       Asah kemampuanmu melalui ekskul-eskul
