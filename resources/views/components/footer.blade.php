@@ -1,4 +1,4 @@
-<footer class="bg-green-700 text-white py-12">
+<footer class="bg-[#699D15] text-white py-12">
     <div class="max-w-7xl mx-auto px-6">
         <div
             x-data="{
@@ -23,8 +23,8 @@
                     />
 
                     <div>
-                        <h2 class="text-xl font-bold">Citra Negara</h2>
-                        <p class="text-sm opacity-90">YAYASAN AT-TAQWA KEMIRI JAYA</p>
+                        <h2 class="text-xl font-bold">SMK Citra Negara</h2>
+                        <p class="text-sm opacity-90">Pilihan Yang Tepat Di Sekolah Yang M.A.N.T.A.P</p>
                     </div>
                 </div>
 
