@@ -8,13 +8,13 @@
   <!-- Career Bubble Section -->
   <section class="relative bg-[#89B9E0]/20 flex flex-col items-center overflow-hidden">
      <div class="text-center">
-    <div class="flex flex-col md:flex-row items-center justify-start md:p-2 gap-3">
-      <img src="/images/jurusan/logo-tjkt.png" alt="Logo TJKT" class="w-20 md:w-20 md:h-20 object-contain">
-      <h1 class="text-lg md:text-xl font-extrabold text-[#89B9E0]">
-        Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
-      </h1>
+      <div class="flex flex-col md:flex-row items-center justify-start md:p-2 gap-3">
+        <img src="/images/jurusan/logo-tjkt.png" alt="Logo TJKT" class="w-20 md:w-20 md:h-20 object-contain">
+        <h1 class="text-lg md:text-xl font-extrabold text-[#89B9E0]">
+          Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
+        </h1>
+      </div>
     </div>
-</div>
 
     <div class="mt-4 items-center">
       <img src="/images/jurusan/ml-tjkt.png" alt="model pasangan tjkt" class="w-full max-w-sm">

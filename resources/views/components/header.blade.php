@@ -14,7 +14,7 @@
     <div class="flex items-center justify-between h-16">
 
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-3 shrink-0">
+      <a href="/" class="flex gap-3 shrink-0">
         <img
           src="{{ asset('images/logo-cn.png') }}"
           alt="Citra Negara"
