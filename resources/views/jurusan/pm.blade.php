@@ -91,10 +91,10 @@
           ['nama'=>'PPLG','warna'=>'from-purple-400 to-purple-100','border'=>'border-[#B9B4F9]','hover'=>'hover:bg-[#B9B4F9] hover:text-white'],
 
           ['nama'=>'TJKT','warna'=>'from-[#89B9E0] to-blue-100','border'=>'border-[#89B9E0]','hover'=>'hover:bg-[#89B9E0] hover:text-white'],
-
-          ['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','border'=>'border-[#E26A00]','hover'=>'hover:bg-[#E26A00] hover:text-white'],
           
           ['nama'=>'MPLB','warna'=>'from-[#E8B931] to-yellow-100','border'=>'border-[#FFD600]','hover'=>'hover:bg-[#FFD600] hover:text-black'],
+
+          ['nama'=>'PH','warna'=>'from-green-200 to-gray-100','border'=>'border-green-700','hover'=>'hover:bg-green-700 hover:text-white'],
         ];
       @endphp
 

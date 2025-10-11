@@ -40,7 +40,7 @@
         @endphp
 
         @foreach ($materi as $m)
-          <span class="px-4 py-2 bg-[#FFFF00] rounded-full text-sm font-medium shadow">
+          <span class="px-4 py-2 bg-[#000367] text-white rounded-full text-sm font-medium shadow">
             {{ $m }}
           </span>
         @endforeach
@@ -72,7 +72,7 @@
       @endphp
 
       @foreach ($career as $job)
-        <span class="px-6 py-3 bg-[#FFFF00] text-sm md:text-base font-medium rounded-full shadow">
+        <span class="px-6 py-3 bg-[#000367] text-white text-sm md:text-base font-medium rounded-full shadow">
           {{ $job }}
         </span>
       @endforeach
