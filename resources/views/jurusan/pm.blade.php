@@ -97,7 +97,7 @@
           ['nama'=>'PH','warna'=>'from-green-200 to-gray-100','border'=>'border-green-700','hover'=>'hover:bg-green-700 hover:text-white'],
         ];
       @endphp
-
+  
       <div class="flex flex-wrap justify-center gap-4">
         @foreach ($jurusanLain as $j)
           <a href="{{ url('/jurusan/' . strtolower($j['nama'])) }}"

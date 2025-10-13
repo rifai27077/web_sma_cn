@@ -229,14 +229,49 @@
 </section>
 
 <!-- Prestasi Section -->
-<section class="py-20 px-6 bg-[#7CB518] >
-	<h3 class="text-xl md:text-2xl font-bold text-center mb-8">Jejak prestasi yang <span class="bg-[#7CB518] text-white px-2 rounded">membanggakan</span></h3>
-	<div class="flex flex-wrap justify-center gap-6">
-		<img src="/images/prestasi-1.jpg" alt="Juara 1" class="w-72 rounded-xl shadow border border-gray-100" />
-		<img src="/images/prestasi-2.jpg" alt="Juara Nasional" class="w-72 rounded-xl shadow border border-gray-100" />
-		<img src="/images/prestasi-3.jpg" alt="Juara Utama 2" class="w-72 rounded-xl shadow border border-gray-100" />
-	</div>
+<section class="py-20 px-6 bg-[#f7f7f7] overflow-hidden">
+  <h3 class="text-xl md:text-2xl font-bold text-center mb-8">
+    Jejak prestasi yang
+    <span class="bg-[#7CB518] text-white px-2 rounded">membanggakan</span>
+  </h3>
+
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex items-center gap-6 animate-scroll">
+      <img src="/images/p1.png" alt="Prestasi 1" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p2.png" alt="Prestasi 2" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p3.png" alt="Prestasi 3" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p1.png" alt="Prestasi 4" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p2.png" alt="Prestasi 5" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+
+      <!-- Duplikat untuk efek loop tanpa jeda -->
+      <img src="/images/p1.png" alt="Prestasi 1" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p2.png" alt="Prestasi 2" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p3.png" alt="Prestasi 3" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p1.png" alt="Prestasi 4" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <img src="/images/p2.png" alt="Prestasi 5" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+    </div>
+  </div>
+
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-scroll {
+      width: 200%;
+      animation: scroll 25s linear infinite;
+    }
+  </style>
 </section>
+
+
+
+
 
 <section class="py-20 px-6 bg-white" id="ekstrakurikuler">
   <div class="max-w-7xl mx-auto text-center mb-14">
