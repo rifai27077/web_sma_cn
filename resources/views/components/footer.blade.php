@@ -127,7 +127,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="text-center text-sm text-gray-200 mt-10 border-t border-green-600 pt-4">
+        <div class="text-center text-sm text-gray-200 mt-10 border-t border-gray-300 pt-4">
             © 2025 Citra Negara. All rights reserved.
         </div>
     </div>

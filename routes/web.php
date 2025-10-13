@@ -17,6 +17,11 @@ Route::get('/sejarah', function () {
 Route::get('/yayasan', function () {
     return view('yayasan');
 });
+
 Route::get('/sekolah', function () {
     return view('sekolah');
+});
+
+Route::get('/prestasi', function () {
+    return view('prestasi');
 });

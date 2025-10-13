@@ -161,116 +161,163 @@
   </div>
 </section>
 
-
 <!-- Pilihan Jurusan Section -->
 <section class="py-20 px-6 bg-gradient-to-b from-white via-green-50 to-white" id="jurusan">
   <div class="max-w-6xl mx-auto text-center">
-    <h3 class="text-3xl md:text-5xl font-extrabold text-[#7CB518] mb-4" data-aos="fade-down">
-      Pilihan Jurusan Unggulan <br />
-      <span class="text-[#14104E]">SMK Citra Negara</span>
+    <h3 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4 leading-tight" data-aos="fade-down">
+      Temukan <span class="text-[#7CB518]">Jurusan Unggulan</span>  
+      <br class="hidden md:block" /> 
+      di <span class="text-gray-800">SMK Citra Negara</span>
     </h3>
     <p class="text-gray-600 max-w-3xl mx-auto mb-16 text-base md:text-lg" data-aos="fade-up" data-aos-delay="150">
-      Kami menghadirkan enam jurusan yang dirancang untuk membangun kompetensi dan karakter sesuai minat serta kebutuhan industri masa kini.
+      Enam jurusan pilihan dengan kurikulum terkini yang disiapkan untuk mencetak generasi profesional, kreatif, 
+      dan siap menghadapi tantangan dunia kerja maupun dunia usaha.
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- Card Template -->
-      @php
-        $jurusan = [
-          ['nama'=>'MPLB','warna'=>'from-[#E8B931] to-yellow-100','img'=>'/images/m-mplb.png','desk'=>'Mengembangkan kemampuan administrasi, komunikasi bisnis, dan layanan perkantoran digital.','text'=>'text-yellow-700','border'=>'border-[#FFD600]'],
-          ['nama'=>'DKV','warna'=>'from-[#900B09] to-pink-300','img'=>'/images/m-dkv.png','desk'=>'Belajar desain visual, ilustrasi, fotografi, hingga branding digital kreatif.','text'=>'text-white','border'=>'border-[#FF6B6B]'],
-          ['nama'=>'PPLG','warna'=>'from-[#14104E] to-blue-300','img'=>'/images/m-pplg.png','desk'=>'Menciptakan perangkat lunak, website, dan game dengan teknologi modern.','text'=>'text-white','border'=>'border-[#7B6CF6]'],
-          ['nama'=>'TJKT','warna'=>'from-blue-400 to-blue-100','img'=>'/images/m-tkj.png','desk'=>'Menguasai jaringan komputer, sistem server, dan infrastruktur IT profesional.','text'=>'text-blue-900','border'=>'border-[#6EC6FF]'],
-          ['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','img'=>'/images/m-pm.png','desk'=>'Belajar strategi pemasaran digital, wirausaha, dan layanan pelanggan.','text'=>'text-[#E26A00]','border'=>'border-[#E26A00]'],
-          ['nama'=>'PH','warna'=>'from-green-200 to-gray-100','img'=>'/images/m-ph.png','desk'=>'Mengasah keahlian di bidang perhotelan, pelayanan tamu, dan tata boga.','text'=>'text-green-800','border'=>'border-green-700']
-        ];
-      @endphp
+     @php
+  $jurusan = [
+    ['nama'=>'MPLB','warna'=>'from-[#E8B931] to-yellow-100','img'=>'/images/m-mplb.png','desk'=>'Mengembangkan kemampuan administrasi, komunikasi bisnis, dan layanan perkantoran digital.','text'=>'text-yellow-700','border'=>'border-[#FFD600]', 'link'=>'mplb', 'comingsoon'=>false],
+    ['nama'=>'DKV','warna'=>'from-[#900B09] to-pink-300','img'=>'/images/m-dkv.png','desk'=>'Belajar desain visual, ilustrasi, fotografi, hingga branding digital kreatif.','text'=>'text-white','border'=>'border-[#FF6B6B]', 'link'=>'dkv', 'comingsoon'=>false],
+    ['nama'=>'PPLG','warna'=>'from-[#14104E] to-blue-300','img'=>'/images/m-pplg.png','desk'=>'Menciptakan perangkat lunak, website, dan game dengan teknologi modern.','text'=>'text-white','border'=>'border-[#7B6CF6]', 'link'=>'pplg', 'comingsoon'=>false],
+    ['nama'=>'TJKT','warna'=>'from-blue-400 to-blue-100','img'=>'/images/m-tkj.png','desk'=>'Menguasai jaringan komputer, sistem server, dan infrastruktur IT profesional.','text'=>'text-blue-900','border'=>'border-[#6EC6FF]', 'link'=>'tjkt', 'comingsoon'=>false],
+    ['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','img'=>'/images/m-pm.png','desk'=>'Belajar strategi pemasaran digital, wirausaha, dan layanan pelanggan.','text'=>'text-[#E26A00]','border'=>'border-[#E26A00]', 'link'=>'pm', 'comingsoon'=>false],
+    ['nama'=>'PH','warna'=>'from-green-200 to-gray-100','img'=>'/images/m-ph.png','desk'=>'Mengasah keahlian di bidang perhotelan, pelayanan tamu, dan tata boga.','text'=>'text-green-800','border'=>'border-green-700', 'link'=>'ph', 'comingsoon'=>true]
+  ];
+@endphp
 
-	  @php
-		$jurusan = [
-			['nama'=>'MPLB','warna'=>'from-[#E8B931] to-yellow-100','img'=>'/images/m-mplb.png','desk'=>'Mengembangkan kemampuan administrasi, komunikasi bisnis, dan layanan perkantoran digital.','text'=>'text-yellow-700','border'=>'border-[#FFD600]', 'link'=>'mplb'],
-			['nama'=>'DKV','warna'=>'from-[#900B09] to-pink-300','img'=>'/images/m-dkv.png','desk'=>'Belajar desain visual, ilustrasi, fotografi, hingga branding digital kreatif.','text'=>'text-white','border'=>'border-[#FF6B6B]', 'link'=>'dkv'],
-			['nama'=>'PPLG','warna'=>'from-[#14104E] to-blue-300','img'=>'/images/m-pplg.png','desk'=>'Menciptakan perangkat lunak, website, dan game dengan teknologi modern.','text'=>'text-white','border'=>'border-[#7B6CF6]', 'link'=>'pplg'],
-			['nama'=>'TJKT','warna'=>'from-blue-400 to-blue-100','img'=>'/images/m-tkj.png','desk'=>'Menguasai jaringan komputer, sistem server, dan infrastruktur IT profesional.','text'=>'text-blue-900','border'=>'border-[#6EC6FF]', 'link'=>'tjkt'],
-			['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','img'=>'/images/m-pm.png','desk'=>'Belajar strategi pemasaran digital, wirausaha, dan layanan pelanggan.','text'=>'text-[#E26A00]','border'=>'border-[#E26A00]', 'link'=>'pm'],
-			['nama'=>'PH','warna'=>'from-green-200 to-gray-100','img'=>'/images/m-ph.png','desk'=>'Mengasah keahlian di bidang perhotelan, pelayanan tamu, dan tata boga.','text'=>'text-green-800','border'=>'border-green-700', 'link'=>'ph']
-		];
-		@endphp
+@foreach ($jurusan as $index => $j)
+  <div
+    class="relative group rounded-2xl bg-gradient-to-br {{ $j['warna'] }} p-8 flex flex-col items-center shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.03]"
+    data-aos="fade-up"
+    data-aos-delay="{{ 100 + ($index * 100) }}">
+    
+    <!-- Glow effect -->
+    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/10 rounded-2xl blur-lg"></div>
+    
+    <!-- Gambar jurusan -->
+    <div class="relative z-10 w-40 h-40 mb-6 flex items-center justify-center">
+      <img 
+        src="{{ $j['img'] }}" 
+        alt="{{ $j['nama'] }}" 
+        class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-lg"
+      />
+    </div>
 
-      @foreach ($jurusan as $index => $j)
-      <div 
-        class="relative group rounded-2xl bg-gradient-to-br {{ $j['warna'] }} p-8 flex flex-col items-center shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.03]"
-        data-aos="fade-up"
-        data-aos-delay="{{ 100 + ($index * 100) }}">
-        
-        <!-- Glow effect -->
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/10 rounded-2xl blur-lg"></div>
-        
-        <!-- Gambar jurusan -->
-		<div class="relative z-10 w-40 h-40 mb-6 flex items-center justify-center">
-			<img 
-				src="{{ $j['img'] }}" 
-				alt="{{ $j['nama'] }}" 
-				class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-lg"
-			/>
-		</div>
-
-        <h4 class="relative z-10 font-extrabold text-xl {{ $j['text'] }} mb-2">{{ $j['nama'] }}</h4>
-        <p class="relative z-10 text-sm md:text-base text-center text-black/80 mb-4">{{ $j['desk'] }}</p>
-        
-       <a href="{{ url('/jurusan/' . strtolower($j['link'])) }}" 
-		class="relative z-10 inline-flex items-center px-5 py-2 bg-white {{ $j['border'] }} border text-sm font-semibold rounded-full transition-all duration-300 hover:text-white hover:bg-[#7CB518]">
-		Ketahui lebih lanjut <span class="ml-2">→</span>
-		</a>
-      </div>
-      @endforeach
+    <h4 class="relative z-10 font-extrabold text-xl {{ $j['text'] }} mb-2">{{ $j['nama'] }}</h4>
+    <p class="relative z-10 text-sm md:text-base text-center text-black/80 mb-4">{{ $j['desk'] }}</p>
+    
+    @if ($j['comingsoon'])
+      <span class="relative z-10 inline-flex items-center px-5 py-2 bg-gray-400/70 border border-gray-300 text-sm font-semibold rounded-full text-white cursor-not-allowed">
+        Coming Soon
+      </span>
+    @else
+      <a href="{{ url('/jurusan/' . strtolower($j['link'])) }}" 
+        class="relative z-10 inline-flex items-center px-5 py-2 bg-white {{ $j['border'] }} border text-sm font-semibold rounded-full transition-all duration-300 hover:text-white hover:bg-[#7CB518]">
+        Ketahui lebih lanjut <span class="ml-2">→</span>
+      </a>
+    @endif
+  </div>
+@endforeach
+  
     </div>
   </div>
 </section>
 
 <!-- Prestasi Section -->
-<section class="py-20 px-6 bg-[#f7f7f7] overflow-hidden">
-  <h3 class="text-xl md:text-2xl font-bold text-center mb-8">
-    Jejak prestasi yang
-    <span class="bg-[#7CB518] text-white px-2 rounded">membanggakan</span>
-  </h3>
+<section class="py-20 px-6 bg-[#f7f7f7] overflow-hidden relative">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-center text-2xl md:text-3xl font-extrabold text-[#7CB518] mb-8">Informasi terkini Citra Negara</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mt-4 text-base md:text-lg">
+      Inilah deretan prestasi membanggakan siswa-siswi SMK Citra Negara
+      sebagai wujud kerja keras, semangat, dan dedikasi dalam berbagai bidang keahlian.
+    </p>
+  </div>
 
-  <div class="relative max-w-7xl mx-auto">
-    <div class="flex items-center gap-6 animate-scroll">
-      <img src="/images/p1.png" alt="Prestasi 1" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p2.png" alt="Prestasi 2" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p3.png" alt="Prestasi 3" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p1.png" alt="Prestasi 4" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p2.png" alt="Prestasi 5" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+  <!-- Carousel Container -->
+  <div class="relative max-w-[95vw] md:max-w-[90vw] mx-auto">
+    <div class="scroll-track flex gap-6 md:gap-10">
+      <!-- Loop utama -->
+      <div class="scroll-group flex gap-6 md:gap-10">
+        @foreach ([
+          ['file' => 'p1.png', 'judul' => 'Juara 1 Lomba Robotik', 'desc' => 'Tingkat Nasional 2024'],
+          ['file' => 'p2.png', 'judul' => 'Desain Web Terbaik', 'desc' => 'LKS SMK Provinsi Jawa Barat'],
+          ['file' => 'p3.png', 'judul' => 'Inovasi Produk PKK', 'desc' => 'Pameran Kewirausahaan 2025'],
+          ['file' => 'p1.png', 'judul' => 'Prestasi Olahraga', 'desc' => 'Kejuaraan Futsal Antar Sekolah'],
+          ['file' => 'p2.png', 'judul' => 'Juara Film Pendek', 'desc' => 'Festival Siswa Indonesia']
+        ] as $item)
+          <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
+            <img 
+              src="{{ asset('images/' . $item['file']) }}" 
+              alt="{{ $item['judul'] }}" 
+              class="w-full h-[300px] sm:h-[400px] md:h-[497px] object-cover rounded-t-2xl"
+            />
+            <div class="p-4 md:p-5 text-center">
+              <p class="text-base md:text-lg font-semibold text-gray-800">{{ $item['judul'] }}</p>
+              <p class="text-xs md:text-sm text-gray-500 mt-1">{{ $item['desc'] }}</p>
+            </div>
+          </div>
+        @endforeach
+      </div>
 
-      <!-- Duplikat untuk efek loop tanpa jeda -->
-      <img src="/images/p1.png" alt="Prestasi 1" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p2.png" alt="Prestasi 2" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p3.png" alt="Prestasi 3" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p1.png" alt="Prestasi 4" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
-      <img src="/images/p2.png" alt="Prestasi 5" class="w-72 md:w-56 rounded-xl shadow border border-gray-100" />
+      <!-- Duplikat agar loop tanpa putus -->
+      <div class="scroll-group flex gap-6 md:gap-10">
+        @foreach ([
+          ['file' => 'p1.png', 'judul' => 'Juara 1 Lomba Robotik', 'desc' => 'Tingkat Nasional 2024'],
+          ['file' => 'p2.png', 'judul' => 'Desain Web Terbaik', 'desc' => 'LKS SMK Provinsi Jawa Barat'],
+          ['file' => 'p3.png', 'judul' => 'Inovasi Produk PKK', 'desc' => 'Pameran Kewirausahaan 2025'],
+          ['file' => 'p1.png', 'judul' => 'Prestasi Olahraga', 'desc' => 'Kejuaraan Futsal Antar Sekolah'],
+          ['file' => 'p2.png', 'judul' => 'Juara Film Pendek', 'desc' => 'Festival Siswa Indonesia']
+        ] as $item)
+          <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
+            <img 
+              src="{{ asset('images/' . $item['file']) }}" 
+              alt="{{ $item['judul'] }}" 
+              class="w-full h-[300px] sm:h-[400px] md:h-[497px] object-cover rounded-t-2xl"
+            />
+            <div class="p-4 md:p-5 text-center">
+              <p class="text-base md:text-lg font-semibold text-gray-800">{{ $item['judul'] }}</p>
+              <p class="text-xs md:text-sm text-gray-500 mt-1">{{ $item['desc'] }}</p>
+            </div>
+          </div>
+        @endforeach
+      </div>
     </div>
   </div>
 
+  <!-- Tombol -->
+  <div class="text-center mt-14">
+    <a href="{{ url('/prestasi') }}" 
+      class="inline-flex items-center px-6 sm:px-8 py-3 bg-[#7CB518] text-white font-semibold text-sm sm:text-base rounded-full shadow-md hover:bg-[#6aa215] hover:shadow-lg transition-all duration-300">
+      Lihat Prestasi Lainnya <span class="ml-2">→</span>
+    </a>
+  </div>
+
+  <!-- Scroll Animation -->
   <style>
     @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
 
-    .animate-scroll {
-      width: 200%;
-      animation: scroll 25s linear infinite;
+    .scroll-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 5s linear infinite;
+    }
+
+    .scroll-group {
+      display: flex;
+    }
+
+    /* Pause animation saat hover (desktop only) */
+    @media (hover: hover) {
+      .scroll-track:hover {
+        animation-play-state: paused;
+      }
     }
   </style>
 </section>
-
-
-
 
 
 <section class="py-20 px-6 bg-white" id="ekstrakurikuler">

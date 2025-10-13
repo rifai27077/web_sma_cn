@@ -49,7 +49,7 @@
             >
               <a href="/yayasan" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Yayasan</a>
               <a href="/sekolah" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Sekolah</a>
-              <a href="#visi-misi" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Visi & Misi</a>
+              <!-- <a href="#visi-misi" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Visi & Misi</a> -->
             </div>
           </div>
 
@@ -72,7 +72,7 @@
             >
               <a href="#jurusan" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Jurusan</a>
               <a href="#ekstrakurikuler" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Ekstrakurikuler</a>
-              <a href="/achievements" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Prestasi</a>
+              <a href="/prestasi" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Prestasi</a>
             </div>
           </div>
 
@@ -151,8 +151,8 @@
   >
     <nav class="flex flex-col gap-2 text-gray-800 font-medium">
       <a href="/yayasan" class="py-2">Yayasan</a>
-      <a href="/school" class="py-2">Sekolah</a>
-      <a href="/visi-misi" class="py-2">Visi & Misi</a>
+      <a href="/sekolah" class="py-2">Sekolah</a>
+      <!-- <a href="#visi-misi" class="py-2">Visi & Misi</a> -->
       <a href="#jurusan" class="py-2">Jurusan</a>
       <a href="#ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
       <a href="/achievements" class="py-2">Prestasi</a>
