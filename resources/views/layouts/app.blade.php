@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="SMK Citra Negara - Sekolah unggulan yang membentuk generasi terampil, disiplin, dan siap kerja.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="SMK Citra Negara, Sekolah Kejuruan, SMK di Bekasi, Pendidikan Vokasi, PPDB 2025">
+    <meta name="keywords" content="SMK Citra Negara, Sekolah Kejuruan, SMK di Depok, Pendidikan Vokasi">
     <meta name="author" content="SMK Citra Negara">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +28,10 @@
 
        
         [x-cloak] { display: none !important; }
+
+        section {
+            scroll-margin-top: 4rem;
+        }
     </style>
 
 </head>
@@ -79,6 +83,5 @@
     <noscript>
         <style>[data-aos]{opacity:1 !important;transform:none !important;}</style>
     </noscript>
-
 </body>
 </html>
