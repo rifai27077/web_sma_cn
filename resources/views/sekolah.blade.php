@@ -32,9 +32,9 @@
     <div class="flex justify-start">
       <img
         id="strukturImage"
-        src="/images/struktur-organisasi.jpg"
+        src="{{ asset('images/struktur-organisasi.jpg') }}"
         alt="Struktur Organisasi SMK Citra Negara"
-        loading="lazy"
+        loading="lazy" decoding="async"
         class="rounded-xl shadow-md w-full md:w-[70%] lg:w-[60%] object-contain border border-gray-200 transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
       />
     </div>
@@ -45,7 +45,7 @@
 <div id="imageModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
   <div class="relative max-w-5xl w-[90%]">
     <button id="closeModal" class="absolute top-2 right-2 text-white text-2xl font-bold hover:text-gray-300">&times;</button>
-    <img src="/images/struktur-organisasi.jpg" alt="Struktur Organisasi Detail" class="rounded-xl shadow-lg w-full h-auto object-contain">
+    <img src="{{ asset('images/struktur-organisasi.jpg') }}" loading="lazy" decoding="async" alt="Struktur Organisasi Detail" class="rounded-xl shadow-lg w-full h-auto object-contain">
   </div>
 </div>
 

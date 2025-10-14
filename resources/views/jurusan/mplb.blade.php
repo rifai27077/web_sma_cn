@@ -3,13 +3,13 @@
 @section('title', 'TJKT - SMK Citra Negara')
 
 @section('content')
-<body class="bg-[#f8f8f8] text-gray-800">
+<div class="bg-[#f8f8f8] text-gray-800">
 
   <!-- Career Bubble Section -->
   <section class="relative flex flex-col items-center overflow-hidden">
      <div class="text-center">
       <div class="flex flex-col md:flex-row items-center justify-start md:p-2 gap-3">
-        <img src="/images/jurusan/logo-mplb.png" alt="Logo MPLB" class="w-20 md:w-20 md:h-20 object-contain">
+        <img src="{{ asset('images/jurusan/logo-mplb.png') }}" loading="lazy" decoding="async" alt="Logo MPLB" class="w-20 md:w-20 md:h-20 object-contain">
         <h1 class="text-lg text-[#FFD600] md:text-xl font-extrabold">
             Manajemen Perkantoran dan Layanan Bisnis (MPLB)
         </h1>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="mt-4 items-center">
-      <img src="/images/jurusan/ml-mplb.png" alt="model pasangan tjkt" class="w-full max-w-sm">
+      <img src="/images/jurusan/ml-mplb.png" loading="lazy" decoding="async" alt="model pasangan tjkt" class="w-full max-w-sm">
     </div>
   </section>
 
@@ -91,8 +91,6 @@
           ['nama'=>'TJKT','warna'=>'from-[#89B9E0] to-blue-100','border'=>'border-[#89B9E0]','hover'=>'hover:bg-[#89B9E0] hover:text-white'],
 
           ['nama'=>'PM','warna'=>'from-[#FFB84C] to-[#FFD580]','border'=>'border-[#E26A00]','hover'=>'hover:bg-[#E26A00] hover:text-white'],
-
-          ['nama'=>'PH','warna'=>'from-green-200 to-gray-100','border'=>'border-green-700','hover'=>'hover:bg-green-700 hover:text-white'],
         ];
       @endphp
 
@@ -115,5 +113,5 @@
     </a>
   </div>
 
-</body>
+</div>
 @endsection

@@ -49,7 +49,6 @@
             >
               <a href="/yayasan" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Yayasan</a>
               <a href="/sekolah" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Sekolah</a>
-              <!-- <a href="#visi-misi" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Visi & Misi</a> -->
             </div>
           </div>
 
@@ -70,49 +69,15 @@
               x-transition:leave-end="opacity-0 -translate-y-2"
               class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
             >
-              <a href="#jurusan" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Jurusan</a>
+              <a href="{{ url('/#jurusan') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Jurusan</a>
               <a href="#ekstrakurikuler" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Ekstrakurikuler</a>
-              <a href="/prestasi" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Prestasi</a>
+              <a href="{{ url('/#prestasi') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Prestasi</a>
             </div>
           </div>
 
-          <div class="relative" @mouseenter="dropdown = 'direktori'" @mouseleave="dropdown = null">
-            <button class="flex items-center gap-1 hover:text-[#699D15] transition-colors duration-300">
-              Direktori
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div
-              x-show="dropdown === 'direktori'"
-              x-transition
-              class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
-            >
-              <a href="/teachers" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Guru</a>
-              <a href="/staff" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Staf</a>
-            </div>
-          </div>
-
-          <!-- <div class="relative" @mouseenter="dropdown = 'galeri'" @mouseleave="dropdown = null">
-            <button class="flex items-center gap-1 hover:text-[#699D15] transition-colors duration-300">
-              Galeri
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div
-              x-show="dropdown === 'galeri'"
-              x-transition
-              class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
-            >
-              <a href="#school-video" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Video Sekolah</a>
-              <a href="#school-photo" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Foto Sekolah</a>
-            </div>
-          </div> -->
-
-          <!-- KONTAK -->
           <a href="/berita" class="hover:text-[#699D15] transition-colors duration-300">Berita</a>
           <a href="/kontak" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
+          <a href="{{ url('/#kontak') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
         </nav>
 
         <!-- CTA + Hamburger -->
@@ -153,14 +118,15 @@
       <a href="/yayasan" class="py-2">Yayasan</a>
       <a href="/sekolah" class="py-2">Sekolah</a>
       <!-- <a href="#visi-misi" class="py-2">Visi & Misi</a> -->
-      <a href="#jurusan" class="py-2">Jurusan</a>
-      <a href="#ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
+      <a href="{{ url('/#jurusan') }}" class="py-2">Jurusan</a>
+      <a href="/ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
       <a href="/achievements" class="py-2">Prestasi</a>
       <a href="/teachers" class="py-2">Guru</a>
       <a href="/staff" class="py-2">Staf</a>
       <a href="/school-video" class="py-2">Video Sekolah</a>
       <a href="/school-photo" class="py-2">Foto Sekolah</a>
       <a href="/kontak" class="py-2">Kontak</a>
+      <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a> 
       <a href="/berita" class="py-2">Berita</a>
       <a href="/pendaftaran"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">

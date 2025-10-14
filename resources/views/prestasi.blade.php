@@ -29,6 +29,7 @@
       <img 
         src="{{ asset('images/' . $item['file']) }}" 
         alt="{{ $item['judul'] }}" 
+        loading="lazy" decoding="async"
         class="w-full h-[400px] object-cover"
       />
 
