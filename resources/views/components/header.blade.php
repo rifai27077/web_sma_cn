@@ -120,8 +120,6 @@
       <a href="{{ url('/#jurusan') }}" class="py-2">Jurusan</a>
       <a href="/ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
       <a href="/achievements" class="py-2">Prestasi</a>
-      <a href="/teachers" class="py-2">Guru</a>
-      <a href="/staff" class="py-2">Staf</a>
       <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a>
       <a href="/berita" class="py-2">Berita</a>
       <a href="/pendaftaran"
