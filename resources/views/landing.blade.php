@@ -16,7 +16,7 @@
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 flex flex-col items-center justify-center min-h-[400px]" style="min-height:400px;">
     <div class="w-full md:w-2/3 mx-auto text-center" data-aos="zoom-in" data-aos-delay="50">
       <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-        Selamat Datang di <span class="bg-white text-[#7CB518] px-2 rounded">SMK Citra Negara</span>
+        Selamat Datang di <span class="text-[#7CB518] px-2 rounded">SMK Citra Negara</span>
       </h1>
       <p class="text-white text-lg mb-6">
         Mencetak generasi yang terampil, berkarakter, dan siap bersaing di dunia kerja serta melanjutkan pendidikan ke jenjang yang lebih tinggi.
