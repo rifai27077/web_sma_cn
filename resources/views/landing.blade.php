@@ -330,10 +330,10 @@
 
   @php
     $ekskul = [
-      ['nama'=>'CITTER','deskripsi'=>'Citra Negara Theater','img'=>'/images/citter.png','wa'=>'#','ig'=>'#','posisi'=>'left'],
-      ['nama'=>'Futsal','deskripsi'=>'Ekstrakurikuler Futsal','img'=>'/images/futsal.png','wa'=>'#','ig'=>'#','posisi'=>'right'],
-      ['nama'=>'Paskibra','deskripsi'=>'Baswara','img'=>'/images/paskibra.png','wa'=>'#','ig'=>'#','posisi'=>'left'],
-      ['nama'=>'Cinar','deskripsi'=>'Seni Tari Citra Negara','img'=>'/images/cinar.png','wa'=>'#','ig'=>'#','posisi'=>'right'],
+      ['nama'=>'CITTER','deskripsi'=>'Citra Negara Theater','img'=>'/images/citter.png','wa'=>'#','ig'=>'https://www.instagram.com/citter_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==','posisi'=>'left'],
+      ['nama'=>'Futsal','deskripsi'=>'Ekstrakurikuler Futsal','img'=>'/images/futsal.png','wa'=>'#','ig'=>'https://www.instagram.com/futsal.cn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==','posisi'=>'right'],
+      ['nama'=>'Paskibra','deskripsi'=>'Baswara','img'=>'/images/paskibra.png','wa'=>'#','ig'=>'https://www.instagram.com/paskibra.baswara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==','posisi'=>'left'],
+      ['nama'=>'Cinar','deskripsi'=>'Seni Tari Citra Negara','img'=>'/images/cinar.png','wa'=>'#','ig'=>'https://www.instagram.com/senitaricitranegara?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==','posisi'=>'right'],
     ];
   @endphp
 
