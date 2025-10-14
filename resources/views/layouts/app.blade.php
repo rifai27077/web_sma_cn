@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <meta name="description" content="SMK Citra Negara - Sekolah unggulan yang membentuk generasi terampil, disiplin, dan siap kerja.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="SMK Citra Negara, Sekolah Kejuruan, SMK di Bekasi, Pendidikan Vokasi, PPDB 2025">
+    <meta name="author" content="SMK Citra Negara">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <title>SMK Citra Negara</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 

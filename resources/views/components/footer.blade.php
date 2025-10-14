@@ -50,21 +50,21 @@
             </div>
 
         <!-- Wrapper kanan (buat justify-end) -->
-        <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-12 md:justify-end pr-6 md:pr-12">
+        <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-12 md:justify-end pr-6 md:pr-12">
             <!-- Information -->
             <div class="border-b md:border-none mt-2 md:mt-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Information</h3>
+                    <h3 class="font-semibold uppercase tracking-wide">Informasi</h3>
                     <button class="md:hidden p-2" @click="infoOpen = !infoOpen">
                         <span x-text="infoOpen ? '-' : '+'"></span>
                     </button>
                 </div>
                 <div x-show="desktop || infoOpen" x-collapse class="mt-3">
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Yayasan</a></li>
-                        <li><a href="#" class="hover:underline">Sekolah</a></li>
-                        <li><a href="#" class="hover:underline">Visi & Misi</a></li>
-                        <li><a href="#" class="hover:underline">Berita</a></li>
+                        <li><a href="/yayasan" class="hover:underline">Yayasan</a></li>
+                        <li><a href="/sekolah" class="hover:underline">Sekolah</a></li>
+                        <li><a href="/berita" class="hover:underline">Berita</a></li>
+                        <li><a href="{{ url('/#kontak') }}" class="hover:underline">Kontak</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,35 +72,16 @@
             <!-- Explore -->
             <div class="border-b md:border-none mt-2 md:mt-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Explore</h3>
+                    <h3 class="font-semibold uppercase tracking-wide">Akademik</h3>
                     <button class="md:hidden p-2" @click="exploreOpen = !exploreOpen">
                         <span x-text="exploreOpen ? '-' : '+'"></span>
                     </button>
                 </div>
                 <div x-show="desktop || exploreOpen" x-collapse class="mt-3">
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Bidang Studi</a></li>
-                        <li><a href="#" class="hover:underline">Ekstrakurikuler</a></li>
-                        <li><a href="#" class="hover:underline">Prestasi</a></li>
-                        <li><a href="#" class="hover:underline">Berita</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Resources -->
-            <div class="border-b md:border-none mt-2 md:mt-4">
-                <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Resources</h3>
-                    <button class="md:hidden p-2" @click="resourcesOpen = !resourcesOpen">
-                        <span x-text="resourcesOpen ? '-' : '+'"></span>
-                    </button>
-                </div>
-                <div x-show="desktop || resourcesOpen" x-collapse class="mt-3">
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Daftar Guru</a></li>
-                        <li><a href="#" class="hover:underline">Daftar Staff</a></li>
-                        <li><a href="#" class="hover:underline">Video Sekolah</a></li>
-                        <li><a href="#" class="hover:underline">Foto Sekolah</a></li>
+                        <li><a href="{{ url('/#jurusan') }}" class="hover:underline">Jurusan</a></li>
+                        <li><a href="{{ url('/#ekstrakurikuler') }}" class="hover:underline">Ekstrakurikuler</a></li>
+                        <li><a href="{{ url('/#prestasi') }}" class="hover:underline">Prestasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -108,7 +89,7 @@
             <!-- Contact Info -->
             <div class="border-b md:border-none mt-2 md:mt-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Contact Info</h3>
+                    <h3 class="font-semibold uppercase tracking-wide">Info Kontak</h3>
                     <button class="md:hidden p-2" @click="contactOpen = !contactOpen">
                         <span x-text="contactOpen ? '-' : '+'"></span>
                     </button>

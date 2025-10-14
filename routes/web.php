@@ -25,3 +25,7 @@ Route::get('/sekolah', function () {
 Route::get('/prestasi', function () {
     return view('prestasi');
 });
+
+Route::get('/ekstrakurikuler', function () {
+    return view('ekstrakurikuler');
+});
