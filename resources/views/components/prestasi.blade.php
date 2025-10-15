@@ -15,9 +15,12 @@
       <!-- Loop utama -->
       <div class="scroll-group flex gap-6 md:gap-10">
         @foreach ([
-          ['file' => 'p1.png', 'judul' => 'Juara 1 Lomba Robotik', 'desc' => 'Tingkat Nasional 2024'],
-          ['file' => 'p2.png', 'judul' => 'Desain Web Terbaik', 'desc' => 'LKS SMK Provinsi Jawa Barat'],
-          ['file' => 'p3.png', 'judul' => 'Inovasi Produk PKK', 'desc' => 'Pameran Kewirausahaan 2025'],
+          ['file' => 'p1.png', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'PESOET CUP Sejabodetabek 2025'],
+          ['file' => 'p2.png', 'judul' => 'Juara 1 Taekwondo Putra', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p3.png', 'judul' => 'Juara Utama 2', 'desc' => 'PBB, LKBB & Kostum Catabrasta Se-Pulau Jawa'],
+          ['file' => 'p4.jpg', 'judul' => 'Juara 1 Pencak Silat', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p5.jpg', 'judul' => 'Juara 1 Basket Putri', 'desc' => 'Haraki Cup 2025 SLTA Se-Jabodetabek'],
+          ['file' => 'p6.jpg', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'Futsal Primer Student League']
         ] as $item)
           <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
             <img 
@@ -37,9 +40,12 @@
       <!-- Duplikat agar loop tanpa putus -->
       <div class="scroll-group flex gap-6 md:gap-10">
         @foreach ([
-          ['file' => 'p1.png', 'judul' => 'Juara 1 Lomba Robotik', 'desc' => 'Tingkat Nasional 2024'],
-          ['file' => 'p2.png', 'judul' => 'Desain Web Terbaik', 'desc' => 'LKS SMK Provinsi Jawa Barat'],
-          ['file' => 'p3.png', 'judul' => 'Inovasi Produk PKK', 'desc' => 'Pameran Kewirausahaan 2025'],
+          ['file' => 'p1.png', 'judul' => 'Juara 1 Tim futsal', 'desc' => 'PESOET CUP Sejabodetabek 2025'],
+          ['file' => 'p2.png', 'judul' => 'Juara 1 Taekwondo putra', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p3.png', 'judul' => 'Juara Utama 2', 'desc' => 'PBB, LKBB & Kostum Catabrasta Se-Pulau Jawa'],
+          ['file' => 'p4.jpg', 'judul' => 'Juara 1 Pencak Silat', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p5.jpg', 'judul' => 'Juara 1 Basket Putri', 'desc' => 'Haraki Cup 2025 SLTA Se-Jabodetabek'],
+          ['file' => 'p6.jpg', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'Futsal Primer Student League']
         ] as $item)
           <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
             <img 
