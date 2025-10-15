@@ -6,7 +6,6 @@
 <x-hero />
 <x-sambutan />
 <x-visi-misi />
-<x-bidang-studi />
 <x-jurusan />
 <x-prestasi />
 <x-ekstrakurikuler />

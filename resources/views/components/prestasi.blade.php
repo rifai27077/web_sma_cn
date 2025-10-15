@@ -1,10 +1,10 @@
 <section class="py-20 px-6 min-h-[600px] bg-[#f7f7f7] overflow-hidden relative" id="prestasi">
   <div class="max-w-7xl mx-auto text-center mb-12">
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 animate-fadeIn">
-      Prestasi <span class="text-[#7CB518]">SMK Citra Negara</span>
+      Prestasi <span class="text-[#7CB518]">SMA Citra Negara</span>
     </h2>
     <p class="text-gray-600 max-w-2xl mx-auto mt-4 text-base md:text-lg">
-      Inilah deretan prestasi membanggakan siswa-siswi SMK Citra Negara
+      Inilah deretan prestasi membanggakan siswa-siswi SMA Citra Negara
       sebagai wujud kerja keras, semangat, dan dedikasi dalam berbagai bidang keahlian.
     </p>
   </div>
@@ -62,14 +62,6 @@
         @endforeach
       </div>
     </div>
-  </div>
-
-  <!-- Tombol -->
-  <div class="text-center mt-14">
-    <a href="{{ url('/prestasi') }}" 
-      class="inline-flex items-center px-6 sm:px-8 py-3 bg-[#7CB518] text-white font-semibold text-sm sm:text-base rounded-full shadow-md hover:bg-[#6aa215] hover:shadow-lg transition-all duration-300">
-      Lihat Prestasi Lainnya <span class="ml-2">→</span>
-    </a>
   </div>
 
   <!-- Scroll Animation -->

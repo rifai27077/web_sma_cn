@@ -11,10 +11,10 @@
     <!-- Judul Halaman -->
     <div class="text-center mb-14">
       <h3 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] leading-snug">
-        Semua Berita SMK Citra Negara
+        Semua Berita SMA Citra Negara
       </h3>
       <p class="text-gray-800 text-base md:text-lg mt-5 max-w-3xl mx-auto leading-relaxed">
-        Kumpulan informasi terbaru seputar kegiatan, prestasi, dan acara di lingkungan SMK Citra Negara.
+        Kumpulan informasi terbaru seputar kegiatan, prestasi, dan acara di lingkungan SMA Citra Negara.
       </p>
     </div>
 
