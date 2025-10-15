@@ -17,12 +17,12 @@
   <!-- Grid Prestasi -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
     @foreach ([
-      ['file'=>'p1.png','judul'=>'Juara 1 Lomba Robotik','desc'=>'Tingkat Nasional 2024'],
-      ['file'=>'p2.png','judul'=>'Desain Web Terbaik','desc'=>'LKS SMK Provinsi Jawa Barat'],
-      ['file'=>'p3.png','judul'=>'Inovasi Produk PKK','desc'=>'Pameran Kewirausahaan 2025'],
-      ['file'=>'p1.png','judul'=>'Prestasi Olahraga','desc'=>'Kejuaraan Futsal Antar Sekolah'],
-      ['file'=>'p2.png','judul'=>'Juara Film Pendek','desc'=>'Festival Siswa Indonesia'],
-      ['file'=>'p3.png','judul'=>'Inovasi Aplikasi Mobile','desc'=>'Kompetisi Teknologi 2025']
+      ['file' => 'p1.png', 'judul' => 'Juara 1 Tim futsal', 'desc' => 'PESOET CUP Sejabodetabek 2025'],
+      ['file' => 'p2.png', 'judul' => 'Juara 1 Taekwondo putra', 'desc' => 'Tingkat Nasional'],
+      ['file' => 'p3.png', 'judul' => 'Juara Utama 2', 'desc' => 'PBB, LKBB & Kostum Catabrasta Se-Pulau Jawa'],
+      ['file' => 'p4.jpg', 'judul' => 'Juara 1 Pencak Silat', 'desc' => 'Tingkat Nasional'],
+      ['file' => 'p5.jpg', 'judul' => 'Juara 1 Basket Putri', 'desc' => 'Haraki Cup 2025 SLTA Se-Jabodetabek'],
+      ['file' => 'p6.jpg', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'Futsal Primer Student League']
     ] as $item)
     <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition-all duration-300">
       <!-- Gambar -->

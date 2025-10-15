@@ -76,6 +76,7 @@
           </div>
 
           <a href="/berita" class="hover:text-[#699D15] transition-colors duration-300">Berita</a>
+          <a href="/kontak" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
           <a href="{{ url('/#kontak') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
         </nav>
 
@@ -120,7 +121,12 @@
       <a href="{{ url('/#jurusan') }}" class="py-2">Jurusan</a>
       <a href="/ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
       <a href="/achievements" class="py-2">Prestasi</a>
-      <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a>
+      <a href="/teachers" class="py-2">Guru</a>
+      <a href="/staff" class="py-2">Staf</a>
+      <a href="/school-video" class="py-2">Video Sekolah</a>
+      <a href="/school-photo" class="py-2">Foto Sekolah</a>
+      <a href="/kontak" class="py-2">Kontak</a>
+      <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a> 
       <a href="/berita" class="py-2">Berita</a>
       <a href="/pendaftaran"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">
