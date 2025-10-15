@@ -34,16 +34,16 @@
                 </p>
 
                 <div class="flex gap-4 mt-5 text-xl">
-                    <a href="https://youtube.com/yourchannel" target="_blank" class="hover:text-red-500 transition">
+                    <a href="https://www.youtube.com/@citranegaratv9070" target="_blank" class="hover:text-red-500 transition">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="https://instagram.com/yourprofile" target="_blank" class="hover:text-pink-500 transition">
+                    <a href="https://instagram.com/smkcitranegaradepok" target="_blank" class="hover:text-pink-500 transition">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://facebook.com/yourpage" target="_blank" class="hover:text-blue-500 transition">
+                    <a href="https://facebook.com/smkcitranegaraofficial" target="_blank" class="hover:text-blue-500 transition">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://twitter.com/yourprofile" target="_blank" class="hover:text-sky-400 transition">
+                    <a href="https://x.com/citranegaraa" target="_blank" class="hover:text-sky-400 transition">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
