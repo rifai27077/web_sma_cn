@@ -64,7 +64,7 @@
   <div class="relative flex flex-wrap justify-center gap-6 mt-6">
     @php
       $career = [
-        'Ekonom',
+        'Ekonomi',
         'Pengajar',
         'Sosiolog',
         'Sejarawan',

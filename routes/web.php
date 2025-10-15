@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PpdbController;
 
 Route::get('/', function () {
     return view('landing');
@@ -33,3 +34,8 @@ Route::get('/ekstrakurikuler', function () {
 Route::get('/berita', function () {
     return view('berita');
 });
+
+Route::get('/spmb', [PpdbController::class, 'index'])->name('spmb.index');
+Route::post('/ppdb/store', [PpdbController::class, 'store'])->name('ppdb.store');
+
+route::get('/daftar-harga', function () {return view('daftar-harga');})->name('daftar-harga');
