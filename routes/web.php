@@ -29,3 +29,7 @@ Route::get('/prestasi', function () {
 Route::get('/ekstrakurikuler', function () {
     return view('ekstrakurikuler');
 });
+
+Route::get('/berita', function () {
+    return view('berita');
+});
