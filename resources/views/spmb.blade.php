@@ -87,16 +87,14 @@
 
       {{-- Pilihan Jurusan --}}
       <div>
-        <h4 class="text-lg font-bold text-[#7CB518] mb-3">Pilihan Jurusan</h4>
+        <h4 class="text-lg font-bold text-[#7CB518] mb-3">Pilihan Kelas</h4>
         <select name="jurusan" class="appearance-none w-full border border-gray-300 rounded-full px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[#7CB518] bg-white" style="background-image: linear-gradient(45deg, transparent 50%, #000000ff 50%), linear-gradient(135deg, #000000ff 50%, transparent 50%);
          background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
          background-size: 5px 5px, 5px 5px;
          background-repeat: no-repeat;" required>
-          <option value="">-- Pilih Jurusan --</option>
-          <option value="ipa plus">IPA Plus</option>
-          <option value="ipa reguler">IPA Reguler</option>
-          <option value="ipa plus">IPS Plus</option>
-          <option value="ipa reguler">IPS Reguler</option>
+          <option value="">-- Pilih Kelas --</option>
+          <option value="kelas plus">Kelas Plus</option>
+          <option value="kelas reguler">Kelas Reguler</option>
         </select>
       </div>
 
