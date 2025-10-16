@@ -1,7 +1,7 @@
 <section class="py-20 min-h-[600px] px-6 bg-white" id="ekstrakurikuler">
   <div class="max-w-7xl mx-auto text-center mb-14">
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
-      <span class="text-[#7CB518]">Ekstrakurikuler</span> SMK Citra Negara
+      <span class="text-[#7CB518]">Ekstrakurikuler</span> SMA Citra Negara
     </h2>
   </div>
 

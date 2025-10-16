@@ -35,6 +35,10 @@ Route::get('/berita', function () {
     return view('berita');
 });
 
+Route::get('/berita/{judul}', function ($judul) {
+    return view('berita.' . strtolower(str_replace(' ', '-', $judul)));
+});
+
 Route::get('/spmb', [PpdbController::class, 'index'])->name('spmb.index');
 Route::post('/ppdb/store', [PpdbController::class, 'store'])->name('ppdb.store');
 
