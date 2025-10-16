@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
-    <title>SMK Citra Negara</title>
+    <title>SMA Citra Negara</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />

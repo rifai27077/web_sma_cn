@@ -15,13 +15,13 @@
       <!-- Logo -->
       <a href="/" class="flex gap-3 shrink-0">
         <img
-          src="{{ asset('images/logo-cn.png') }}"
+          src="{{ asset('images/logo-sma.png') }}"
           alt="SMK Citra Negara"
           class="w-11 h-11 object-contain transition-transform duration-300 hover:scale-105"
         />
         <div class="hidden sm:flex flex-col leading-tight">
           <span class="font-extrabold text-[#699D15] text-sm lg:text-base">
-            SMK Citra Negara
+            SMA Citra Negara
           </span>
           <span class="text-xs text-gray-600">MANTAP</span>
         </div>
@@ -47,8 +47,8 @@
               x-transition:leave-end="opacity-0 -translate-y-2"
               class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
             >
-              <a href="/yayasan" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Yayasan</a>
-              <a href="/sekolah" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Sekolah</a>
+              <a href="{{ url('/#kata sambutan') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Kata sambutan</a>
+              <a href="{{ url('/#visi misi') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Visi misi</a>
             </div>
           </div>
 
@@ -70,22 +70,21 @@
               class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
             >
               <a href="{{ url('/#jurusan') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Jurusan</a>
-              <a href="#ekstrakurikuler" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Ekstrakurikuler</a>
+
               <a href="{{ url('/#prestasi') }}" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Prestasi</a>
             </div>
           </div>
 
           <a href="/berita" class="hover:text-[#699D15] transition-colors duration-300">Berita</a>
-          <a href="/kontak" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
           <a href="{{ url('/#kontak') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
         </nav>
 
         <!-- CTA + Hamburger -->
         <div class="flex items-center gap-4">
-          <a href="/pendaftaran"
+          <a href="/spmb"
             class="hidden md:inline-block bg-[#699D15] text-white font-semibold px-6 py-2.5 rounded-full 
                    shadow-md hover:shadow-lg hover:bg-[#7FBF1D] active:scale-95 transition-all duration-300 text-sm">
-            DAFTAR PPDB
+            DAFTAR SPMB
           </a>
 
           <!-- Mobile Button -->
@@ -115,22 +114,17 @@
     class="md:hidden bg-white/95 backdrop-blur-sm shadow-lg border-t border-gray-100 px-6 py-5"
   >
     <nav class="flex flex-col gap-2 text-gray-800 font-medium">
-      <a href="/yayasan" class="py-2">Yayasan</a>
-      <a href="/sekolah" class="py-2">Sekolah</a>
+      <a href="{{ url('/#kata sambutan') }}" class="py-2">Kata sambutan</a>
+      <a href="{{ url('/#visi misi') }}" class="py-2">Visi Misi</a>
       <!-- <a href="#visi-misi" class="py-2">Visi & Misi</a> -->
-      <a href="{{ url('/#jurusan') }}" class="py-2">Jurusan</a>
-      <a href="/ekstrakurikuler" class="py-2">Ekstrakurikuler</a>
-      <a href="/achievements" class="py-2">Prestasi</a>
-      <a href="/teachers" class="py-2">Guru</a>
-      <a href="/staff" class="py-2">Staf</a>
-      <a href="/school-video" class="py-2">Video Sekolah</a>
-      <a href="/school-photo" class="py-2">Foto Sekolah</a>
-      <a href="/kontak" class="py-2">Kontak</a>
-      <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a> 
+      <a href="{{ url('/#program-seluruh-kelas') }}" class="py-2">Jurusan</a>
+      <a href="{{ url('/#program-kelas-plus') }}" class="py-2">Program kelas plus</a>
+      <a href="{{ url('/#prestasi') }}" class="py-2">Prestasi</a>
+      <a href="{{ url('/#kontak') }}" class="py-2">Kontak</a>
       <a href="/berita" class="py-2">Berita</a>
-      <a href="/pendaftaran"
+      <a href="/spmb"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">
-        DAFTAR PPDB
+        DAFTAR SPMB
       </a>
     </nav>
   </div>

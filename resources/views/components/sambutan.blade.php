@@ -1,4 +1,4 @@
-<section class="py-20 min-h-[600px] px-6 bg-white" data-aos="fade-up" data-aos-duration="1000">
+<section id="kata sambutan" class="py-20 min-h-[600px] px-6 bg-white" data-aos="fade-up" data-aos-duration="1000">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center">
     <div class="flex gap-6 items-center md:items-stretch" data-aos="fade-right" data-aos-delay="200">
       <div class="mt-4 grid justify-start">
