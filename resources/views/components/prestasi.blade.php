@@ -15,12 +15,12 @@
       <!-- Loop utama -->
       <div class="scroll-group flex gap-6 md:gap-10">
         @foreach ([
-          ['file' => 'p1.png', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'PESOET CUP Sejabodetabek 2025'],
-          ['file' => 'p2.png', 'judul' => 'Juara 1 Taekwondo Putra', 'desc' => 'Tingkat Nasional'],
-          ['file' => 'p3.png', 'judul' => 'Juara Utama 2', 'desc' => 'PBB, LKBB & Kostum Catabrasta Se-Pulau Jawa'],
-          ['file' => 'p4.jpg', 'judul' => 'Juara 1 Pencak Silat', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p1.jpg', 'judul' => 'Juara 1 Sepak Bola Nasional U16', 'desc' => 'RRI CUP Nasional U16'],
+          ['file' => 'p2.jpg', 'judul' => 'Juara 1 Taekwondo Putri', 'desc' => 'Tingkat Nasional Kejuruan ATF U13'],
+          ['file' => 'p3.jpg', 'judul' => 'Juara 3 Karate', 'desc' => 'O2SN 2025'],
+          ['file' => 'p4.jpg', 'judul' => 'Juara 2 Karate', 'desc' => 'Walikota cup XI'],
           ['file' => 'p5.jpg', 'judul' => 'Juara 1 Basket Putri', 'desc' => 'Haraki Cup 2025 SLTA Se-Jabodetabek'],
-          ['file' => 'p6.jpg', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'Futsal Primer Student League']
+          ['file' => 'p6.jpg', 'judul' => 'Juara 2 Hapkido', 'desc' => 'Dearyun Cup Se-JawaBarat']
         ] as $item)
           <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
             <img 
@@ -40,12 +40,12 @@
       <!-- Duplikat agar loop tanpa putus -->
       <div class="scroll-group flex gap-6 md:gap-10">
         @foreach ([
-          ['file' => 'p1.png', 'judul' => 'Juara 1 Tim futsal', 'desc' => 'PESOET CUP Sejabodetabek 2025'],
-          ['file' => 'p2.png', 'judul' => 'Juara 1 Taekwondo putra', 'desc' => 'Tingkat Nasional'],
-          ['file' => 'p3.png', 'judul' => 'Juara Utama 2', 'desc' => 'PBB, LKBB & Kostum Catabrasta Se-Pulau Jawa'],
-          ['file' => 'p4.jpg', 'judul' => 'Juara 1 Pencak Silat', 'desc' => 'Tingkat Nasional'],
+          ['file' => 'p1.jpg', 'judul' => 'Juara 1 Sepak Bola Nasional U16', 'desc' => 'RRI CUP Nasional U16'],
+          ['file' => 'p2.jpg', 'judul' => 'Juara 1 Taekwondo Putri', 'desc' => 'Tingkat Nasional Kejuruan ATF U13'],
+          ['file' => 'p3.jpg', 'judul' => 'Juara 3 Karate', 'desc' => 'O2SN 2025'],
+          ['file' => 'p4.jpg', 'judul' => 'Juara 2 Karate', 'desc' => 'Walikota cup XI'],
           ['file' => 'p5.jpg', 'judul' => 'Juara 1 Basket Putri', 'desc' => 'Haraki Cup 2025 SLTA Se-Jabodetabek'],
-          ['file' => 'p6.jpg', 'judul' => 'Juara 1 Tim Futsal', 'desc' => 'Futsal Primer Student League']
+          ['file' => 'p6.jpg', 'judul' => 'Juara 2 Hapkido', 'desc' => 'Dearyun Cup Se-JawaBarat']
         ] as $item)
           <div class="flex-shrink-0 w-[75vw] sm:w-[60vw] md:w-[398px] bg-white rounded-2xl shadow-md border border-gray-100 transition-all duration-300">
             <img 
