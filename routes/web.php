@@ -33,3 +33,6 @@ Route::get('/ekstrakurikuler', function () {
 Route::get('/berita', function () {
     return view('berita');
 });
+Route::get('/berita/{judul}', function ($judul) {
+    return view('berita.' . strtolower(str_replace(' ', '-', $judul)));
+});
